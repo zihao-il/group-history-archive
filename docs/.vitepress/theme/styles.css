@@ -1,0 +1,148 @@
+:root {
+    --bprogress-color: #3CADFF !important;
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+            120deg,
+            #3CADFF 30%,
+            #FF6D3E
+    );
+    --vp-home-hero-image-background-image: linear-gradient(
+            -45deg,
+            #3CADFF 50%,
+            #FF6D3E 50%
+    );
+    --vp-home-hero-image-filter: blur(44px);
+
+
+    .VPNavBar:not(.has-sidebar):not(.home.top) {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+
+    .DocSearch-Button {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+
+    .VPFeature {
+        border: none;
+        background-color: transparent;
+        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+    }
+
+
+    .curtain {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (min-width: 960px) {
+
+
+        .VPNavBar:not(.home.top) .content-body {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+
+    .VPLocalNav {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (min-width: 640px) {
+    :root {
+        --vp-home-hero-image-filter: blur(56px);
+    }
+}
+
+@media (min-width: 960px) {
+    :root {
+        --vp-home-hero-image-filter: blur(68px);
+    }
+}
+
+.VPHero .VPImage {
+    padding: 18px;
+    filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* used in reference/default-theme-search */
+img[src='/search.png'] {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.medium-zoom-overlay {
+    z-index: 30;
+}
+
+.medium-zoom-image {
+    z-index: 9999 !important;
+}
+
+/*heimu*/
+
+.heimu {
+    margin: 0 2px;
+    padding: 1.5px 4px;
+    transition: color 0.13s linear,
+    background-color 0.13s linear;
+    color: rgba(60, 60, 67);
+    border-radius: 4px;
+    background-color: rgba(60, 60, 67);
+    text-shadow: none;
+}
+
+html.dark .heimu {
+    color: #E3E3E3;
+    background-color: #E3E3E3;
+}
+
+.heimu code {
+    padding: 0.1rem 0.25rem;
+    color: rgba(60, 60, 67);
+    background-color: rgba(60, 60, 67);
+}
+
+html.dark .heimu code {
+    color: #E3E3E3;
+    background-color: #E3E3E3;
+}
+
+.heimu a {
+    color: rgba(60, 60, 67);
+}
+
+html.dark .heimu a {
+    color: #E3E3E3;
+}
+
+.heimu:hover,
+.heimu:focus,
+.heimu:active {
+    color: var(--vp-c-bg) !important;
+}
+
+.heimu:hover code,
+.heimu:focus code,
+.heimu:active code {
+    color: rgba(60, 60, 67) !important;
+    background-color: var(--vp-c-bg) !important;
+}
+
+.heimu:hover a,
+.heimu:focus a,
+.heimu:active a,
+html.dark .heimu:hover a,
+html.dark .heimu:focus a,
+html.dark .heimu:active a {
+    text-decoration: underline;
+    color: var(--vp-c-bg);
+}
+
+/**/
