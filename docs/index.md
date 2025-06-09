@@ -18,10 +18,12 @@ hero:
     alt: 版本库文档
 features:
   - title: 自黑
-    details: 内有自黑发言，慎重阅读。
+    details: 内有自黑发言，请慎重阅读。
   - title: 自爆
-    details: 内有自爆，慎重阅读。
+    details: 内有自爆发言，请慎重阅读。
+  - title: 逆天
+    details: 内有逆天发言，请慎重阅读。
   - title: 抽象
-    details: 内有抽象发言，慎重阅读。
+    details: 内有抽象发言，请慎重阅读。
 ---
 
