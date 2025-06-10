@@ -59,20 +59,64 @@ export default defineConfig({
                             text: '2025年',
                             collapsed: false,
                             items: [
-                                {text: '12月', link: '/guide/2025/12月.md'},
-                                {text: '11月', link: '/guide/2025/11月.md'},
+                                {text: '4月', link: '/guide/2025/4月.md'},
                             ]
                         },
                         {
                             text: '2024年',
                             collapsed: true,
                             items: [
-                                {text: '12月', link: '/guide/2024/12月.md'},
-                                {text: '11月', link: '/guide/2024/11月.md'},
+                                {text: '9月', link: '/guide/2024/9月.md'},
+                                {text: '8月', link: '/guide/2024/8月.md'},
+                                {text: '6月', link: '/guide/2024/6月.md'},
+                                {text: '5月', link: '/guide/2024/5月.md'},
+                                {text: '4月', link: '/guide/2024/4月.md'},
+                                {text: '2月', link: '/guide/2024/2月.md'},
+                                {text: '1月', link: '/guide/2024/4月.md'},
                             ]
                         },
-                    ]
+
+                        {
+                            text: '2023年',
+                            collapsed: true,
+                            items: [
+                                {text: '12月', link: '/guide/2023/12月.md'},
+                                {text: '6月', link: '/guide/2023/6月.md'},
+                                {text: '5月', link: '/guide/2023/5月.md'},
+                                {text: '3月', link: '/guide/2023/3月.md'},
+                            ]
+                        },
+
+                        {
+                            text: '2022年',
+                            collapsed: true,
+                            items: [
+                                {text: '10月', link: '/guide/2022/10月.md'},
+                                {text: '8月', link: '/guide/2022/8月.md'},
+                                {text: '7月', link: '/guide/2022/7月.md'},
+                                {text: '6月', link: '/guide/2022/6月.md'},
+                                {text: '5月', link: '/guide/2022/5月.md'},
+                                {text: '4月', link: '/guide/2022/4月.md'},
+                                {text: '2月', link: '/guide/2022/2月.md'},
+                                {text: '1月', link: '/guide/2022/1月.md'},
+                            ]
+                        },
+
+                        {
+                            text: '2021年',
+                            collapsed: true,
+                            items: [
+                                {text: '12月', link: '/guide/2021/12月.md'},
+                                {text: '10月', link: '/guide/2021/10月.md'},
+                                {text: '9月', link: '/guide/2021/9月.md'},
+                                {text: '8月', link: '/guide/2021/8月.md'},
+                            ]
+                        },
+                    ],
+
+
                 },
+                {text: '无法确定记录', link: '/guide/index.md'},
 
             ]
         },

@@ -17,6 +17,7 @@ import 'fake-qq-ui/styles/fake-qq-ui.css'
 import 'fake-qq-ui/styles/light.scss'
 import 'fake-qq-ui/styles/dark.scss'
 
+
 export default {
     extends: DefaultTheme,
     enhanceApp({app}) {
