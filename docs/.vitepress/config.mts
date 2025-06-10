@@ -66,7 +66,6 @@ export default defineConfig({
                             text: '2024年',
                             collapsed: true,
                             items: [
-                                {text: '9月', link: '/guide/2024/9月.md'},
                                 {text: '8月', link: '/guide/2024/8月.md'},
                                 {text: '6月', link: '/guide/2024/6月.md'},
                                 {text: '5月', link: '/guide/2024/5月.md'},
