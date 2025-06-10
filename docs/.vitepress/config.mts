@@ -84,6 +84,7 @@ export default defineConfig({
                                 {text: '6月', link: '/guide/2023/6月.md'},
                                 {text: '5月', link: '/guide/2023/5月.md'},
                                 {text: '3月', link: '/guide/2023/3月.md'},
+                                {text: '1月', link: '/guide/2023/1月.md'},
                             ]
                         },
 
