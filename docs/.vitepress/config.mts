@@ -39,6 +39,7 @@ export default defineConfig({
         nav: [
             {text: '首页', link: '/'},
             {text: '聊天记录', link: '/guide/', activeMatch: '/guide/'},
+            {text: '语音记录', link: '/voices/', activeMatch: '/voices/'},
         ],
 
         sidebar: {
@@ -47,6 +48,7 @@ export default defineConfig({
                     text: '查看聊天记录',
                     items: [
                         {text: '聊天记录', link: '/guide/index.md'},
+                        {text: '语音记录', link: '/voices/index.md'},
                     ]
                 }
             ],
@@ -135,6 +137,7 @@ export default defineConfig({
 
                 },
                 {text: '无法确定记录', link: '/guide/index.md'},
+                {text: '语音记录', link: '/voices/index.md'},
 
             ]
         },

@@ -11,6 +11,9 @@ hero:
       text: 💩查看记录
       link: /guide/index.md
     - theme: alt
+      text: 🙉语音记录
+      link: /voices/index.md
+    - theme: alt
       text: 🛠️Github
       link: https://github.com/zihao-il/group-history-archive
   image:
