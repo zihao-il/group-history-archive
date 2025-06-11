@@ -8,9 +8,13 @@ import '@bprogress/core/css';
 import {BProgress} from '@bprogress/core';
 import mediumZoom from 'medium-zoom';
 
+// VolumeBar QWindow RubyCurtain Curtain on code from: https://github.com/GraiaCommunity/Docs
+// License: MIT
+
 import Curtain from "./components/Curtain.vue"
 import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
+import VolumeBar from './components/VolumeBar.vue'
 
 import {FakeQQUI} from 'fake-qq-ui'
 import 'fake-qq-ui/styles/fake-qq-ui.css'
@@ -24,6 +28,7 @@ export default {
         app.component('Curtain', Curtain)
         app.component('RubyCurtain', RubyCurtain)
         app.component('QWindow', QWindow)
+        app.component('VolumeBar', VolumeBar)
         app.use(FakeQQUI)
     },
     setup() {
