@@ -31,6 +31,7 @@ export default defineConfig({
     head: [
         ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
         ['meta', {name: 'theme-color', content: '#FFFFFF'}],
+        ['meta', {name: 'algolia-site-verification', content: '65EE84D98ADA4CF2'}],
     ],
 
     themeConfig: {
@@ -152,8 +153,11 @@ export default defineConfig({
         },
 
         search: {
-            provider: 'local',
+            provider: 'algolia',
             options: {
+                appId: '81VOA7YB5K',
+                apiKey: '17c892c749878a51d362a304eb6ea45e',
+                indexName: 'group-history-archive',
                 translations: {
                     button: {
                         buttonText: '搜索发言',
