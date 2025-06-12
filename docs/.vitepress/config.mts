@@ -31,7 +31,6 @@ export default defineConfig({
     head: [
         ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
         ['meta', {name: 'theme-color', content: '#FFFFFF'}],
-        ['meta', {name: 'algolia-site-verification', content: '65EE84D98ADA4CF2'}],
     ],
 
     themeConfig: {
