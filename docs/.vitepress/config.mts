@@ -136,7 +136,7 @@ export default defineConfig({
 
 
                 },
-                {text: '无法确定记录', link: '/guide/index.md'},
+                {text: '无法确定记录', link: '/guide/未知时间.md'},
                 {text: '语音记录', link: '/voices/index.md'},
 
             ]
@@ -152,11 +152,8 @@ export default defineConfig({
         },
 
         search: {
-            provider: 'algolia',
+            provider: 'local',
             options: {
-                appId: '81VOA7YB5K',
-                apiKey: '17c892c749878a51d362a304eb6ea45e',
-                indexName: 'group-history-archive',
                 translations: {
                     button: {
                         buttonText: '搜索发言',
