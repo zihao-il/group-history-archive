@@ -152,3 +152,12 @@ html.dark .heimu:active a {
     width: 1.5em !important;
     vertical-align: middle;
 }
+
+/**/
+.VPFeatures .items .item {
+    transition: transform 0.3s;
+}
+
+.VPFeatures .items .item:hover {
+    transform: translateY(-5px);
+}
