@@ -2,7 +2,7 @@
 import DefaultTheme from 'vitepress/theme';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import {useData, useRoute} from 'vitepress';
-import {onMounted, watch} from 'vue';
+import {onMounted, h, watch} from 'vue';
 import './styles.css'
 import '@bprogress/core/css';
 import {BProgress} from '@bprogress/core';
@@ -16,6 +16,8 @@ import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
 import VolumeBar from './components/VolumeBar.vue'
 
+import BackTop from "./components/BackTop.vue";
+
 import {FakeQQUI} from 'fake-qq-ui'
 import 'fake-qq-ui/styles/fake-qq-ui.css'
 import 'fake-qq-ui/styles/light.scss'
@@ -24,6 +26,11 @@ import 'fake-qq-ui/styles/dark.scss'
 
 export default {
     extends: DefaultTheme,
+    Layout() {
+        return h(DefaultTheme.Layout, null, {
+            'doc-footer-before': () => h(BackTop),
+        })
+    },
     enhanceApp({app}) {
         app.component('Curtain', Curtain)
         app.component('RubyCurtain', RubyCurtain)
