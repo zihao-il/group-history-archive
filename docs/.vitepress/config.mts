@@ -1,5 +1,45 @@
 import {defineConfig} from 'vitepress'
 import {pagefindPlugin} from 'vitepress-plugin-pagefind'
+import fs from 'fs'
+import path from 'path'
+
+
+function generateChatSidebar(): any[] {
+    const guideRoot = path.resolve(__dirname, '../guide')
+    const currentYear = new Date().getFullYear()
+    const yearDirs = fs.readdirSync(guideRoot)
+        .filter(name => /^\d{4}$/.test(name))
+        .sort((a, b) => Number(b) - Number(a))
+
+    const yearSections = yearDirs.map(year => {
+        const yearPath = path.join(guideRoot, year)
+        const mdFiles = fs.readdirSync(yearPath)
+            .filter(name => /^\d{1,2}月\.md$/.test(name))
+            .sort((a, b) => parseInt(b) - parseInt(a))
+
+        const items = mdFiles.map(file => ({
+            text: file.replace('.md', ''),
+            link: `/guide/${year}/${file}`
+        }))
+
+        return {
+            text: `${year}年`,
+            collapsed: Number(year) !== currentYear,
+            items
+        }
+    })
+
+    return [
+        {
+            text: '聊天记录',
+            link: '/guide/index.md',
+            items: yearSections
+        },
+        {text: '无法确定记录', link: '/guide/未知时间.md'},
+        {text: '语音记录', link: '/voices/index.md'}
+    ]
+}
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -66,96 +106,7 @@ export default defineConfig({
                     ]
                 }
             ],
-            '/guide/': [
-                {
-                    text: '聊天记录',
-                    link: '/guide/index.md',
-                    items: [
-                        {
-                            text: '2025年',
-                            collapsed: false,
-                            items: [
-                                {text: '8月', link: '/guide/2025/8月.md'},
-                                {text: '7月', link: '/guide/2025/7月.md'},
-                                {text: '6月', link: '/guide/2025/6月.md'},
-                                {text: '5月', link: '/guide/2025/5月.md'},
-                                {text: '4月', link: '/guide/2025/4月.md'},
-                                {text: '3月', link: '/guide/2025/3月.md'},
-                                {text: '2月', link: '/guide/2025/2月.md'},
-                                {text: '1月', link: '/guide/2025/1月.md'},
-                            ]
-                        },
-                        {
-                            text: '2024年',
-                            collapsed: true,
-                            items: [
-                                {text: '12月', link: '/guide/2024/12月.md'},
-                                {text: '11月', link: '/guide/2024/11月.md'},
-                                {text: '10月', link: '/guide/2024/10月.md'},
-                                {text: '9月', link: '/guide/2024/9月.md'},
-                                {text: '8月', link: '/guide/2024/8月.md'},
-                                {text: '7月', link: '/guide/2024/7月.md'},
-                                {text: '6月', link: '/guide/2024/6月.md'},
-                                {text: '5月', link: '/guide/2024/5月.md'},
-                                {text: '4月', link: '/guide/2024/4月.md'},
-                                {text: '3月', link: '/guide/2024/3月.md'},
-                                {text: '2月', link: '/guide/2024/2月.md'},
-                                {text: '1月', link: '/guide/2024/1月.md'},
-                            ]
-                        },
-
-                        {
-                            text: '2023年',
-                            collapsed: true,
-                            items: [
-                                {text: '12月', link: '/guide/2023/12月.md'},
-                                {text: '11月', link: '/guide/2023/11月.md'},
-                                {text: '10月', link: '/guide/2023/10月.md'},
-                                {text: '9月', link: '/guide/2023/9月.md'},
-                                {text: '8月', link: '/guide/2023/8月.md'},
-                                {text: '7月', link: '/guide/2023/7月.md'},
-                                {text: '6月', link: '/guide/2023/6月.md'},
-                                {text: '5月', link: '/guide/2023/5月.md'},
-                                {text: '4月', link: '/guide/2023/4月.md'},
-                                {text: '3月', link: '/guide/2023/3月.md'},
-                                {text: '2月', link: '/guide/2023/2月.md'},
-                                {text: '1月', link: '/guide/2023/1月.md'},
-                            ]
-                        },
-
-                        {
-                            text: '2022年',
-                            collapsed: true,
-                            items: [
-                                {text: '10月', link: '/guide/2022/10月.md'},
-                                {text: '8月', link: '/guide/2022/8月.md'},
-                                {text: '7月', link: '/guide/2022/7月.md'},
-                                {text: '6月', link: '/guide/2022/6月.md'},
-                                {text: '5月', link: '/guide/2022/5月.md'},
-                                {text: '4月', link: '/guide/2022/4月.md'},
-                                {text: '2月', link: '/guide/2022/2月.md'},
-                                {text: '1月', link: '/guide/2022/1月.md'},
-                            ]
-                        },
-
-                        {
-                            text: '2021年',
-                            collapsed: true,
-                            items: [
-                                {text: '12月', link: '/guide/2021/12月.md'},
-                                {text: '10月', link: '/guide/2021/10月.md'},
-                                {text: '9月', link: '/guide/2021/9月.md'},
-                                {text: '8月', link: '/guide/2021/8月.md'},
-                            ]
-                        },
-                    ],
-
-
-                },
-                {text: '无法确定记录', link: '/guide/未知时间.md'},
-                {text: '语音记录', link: '/voices/index.md'},
-
-            ]
+            '/guide/': generateChatSidebar()
         },
 
         socialLinks: [
