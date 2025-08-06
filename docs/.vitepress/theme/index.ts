@@ -7,6 +7,7 @@ import './styles.css'
 import '@bprogress/core/css';
 import {BProgress} from '@bprogress/core';
 import mediumZoom from 'medium-zoom';
+import MyLayout from './components/Layout.vue'
 
 // VolumeBar QWindow RubyCurtain Curtain on code from: https://github.com/GraiaCommunity/Docs
 // License: MIT
@@ -26,11 +27,7 @@ import 'fake-qq-ui/styles/dark.scss'
 
 export default {
     extends: DefaultTheme,
-    Layout() {
-        return h(DefaultTheme.Layout, null, {
-            'doc-footer-before': () => h(BackTop),
-        })
-    },
+    Layout: MyLayout,
     enhanceApp({app}) {
         app.component('Curtain', Curtain)
         app.component('RubyCurtain', RubyCurtain)
