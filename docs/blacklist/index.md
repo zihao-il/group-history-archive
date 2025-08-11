@@ -23,7 +23,7 @@ import { QTagColors } from 'fake-qq-ui';
     <q-tip>2025-08-11 21:49</q-tip>
     <q-text name="🇾 🇾 🇹 " tag="LV13" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >申请加入Minecraft资源群x9</q-text>
     <q-text name="new" tag="LV0" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=936242554&spec=100" >申请加入Minecraft资源群x9</q-text>
-    <q-tip>🖕<curtain>SB玩意</curtain>疯狂加群打广告，被踢后还用小号加群继续升打广告</q-tip>
+    <q-tip>🖕<curtain>SB玩意</curtain>疯狂加群打广告，被踢后还用小号加群继续打广告</q-tip>
 
 </q-window>
 
@@ -70,6 +70,6 @@ import { QTagColors } from 'fake-qq-ui';
     <q-tip>2025-08-11 21:49</q-tip>
     <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >hi有8活动邀请您参加8月最新活动链接🔥，冲冲冲！！</q-text>
     <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >www.<curtain>kkidc</curtain>.com/i/AIAtuhvMK！</q-text>
-    <q-tip>🖕这货真是个人才，加群后就转发他那idc的广告链接，被踢了疯狂加群还用0星小号<curtain>纯SB玩意</curtain>,天才的是在入群申请里面填广告信息，这个idc真是养了<curtain>条</curtain>好<curtain>狗</curtain>人啊，最后你直接进黑名单吧</q-tip>
+    <q-tip>🖕这货真是个人才，加群后就转发他那idc的广告链接，被踢了疯狂加群还用0星小号<curtain>纯SB玩意</curtain>,天才的是在入群申请里面填广告信息，这个idc真是养了<curtain>条</curtain>好<curtain>狗</curtain>人啊，最后建议你<curtain>死个妈</curtain>有多远滚多远</q-tip>
 
 </q-window>
