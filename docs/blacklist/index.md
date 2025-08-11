@@ -5,12 +5,23 @@ import { QTagColors } from 'fake-qq-ui';
 
 </script>
 
-##        
+##         
 
 <q-window title="新朋友">
     <q-tip>2025-06-24 16:23:18</q-tip>
     <q-text name="禁言我提问拉黑我的SQJ" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=1328573425&spec=100" >操你妈</q-text>
     <q-text name="🦅" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=1073255603&spec=100" >傻逼t你妈比</q-text>
+
+</q-window>
+
+<br>
+<br>
+
+<q-window title="群通知">
+    <q-tip>2025-08-11 21:49</q-tip>
+    <q-text name="🇾 🇾 🇹 " tag="LV13" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >申请加入Minecraft资源群x9</q-text>
+    <q-tip>🖕<curtain>SB玩意</curtain>疯狂加群打广告</q-tip>
+
 </q-window>
 
 <br>
@@ -35,7 +46,7 @@ import { QTagColors } from 'fake-qq-ui';
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" ><a at>没钱也没女装又丑的穷猫QAQ</a> 好心人能不能直接发我呀？我这边mc版本库下不了</q-text>
     <q-tip>下午 14:43</q-tip>
     <q-text name="没钱也没女装又丑的穷猫QAQ" tag="LV100 一只活的萌新" self :tag-color="QTagColors.orange" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=1767927045&spec=100">Minecraft</q-text>
-    <q-text name="蜜桃酱" tag="LV100 垃圾机器人" isBot :tag-color="QTagColors.blue" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=375911869&spec=100">有问题先看下面文档后再问：<br>https://docs.qq.com/doc/DY3RZaGhBQnphdlpI<br><br>https://docs.mcarc.top/<br><br>基岩版(手机)：<br>https://bbk.endyun.ltd/download（推荐）<br>https://mc233.endyun.ltd（静态）<br>https://www.123pan.com/s/dhm9-Fwr0A.html（旧版本）<br><br>APP下载（都复制浏览器打开）：<br>https://app.mcarc.top/<br>皮肤预览：<br>https://skin.endyun.ltd/<br>基岩版领域：<br>https://realms.mcarc.top/<br><br>Java版启动器(电脑)：<br>https://zihao-il.lanzouo.com/b0rwozud</q-text>
+    <q-text name="蜜桃酱" tag="LV100 垃圾机器人" isBot :tag-color="QTagColors.blue" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=375911869&spec=100">有问题先看下面文档后再问：<br><curtain>https://docs.qq.com/doc/DY3RZaGhBQnphdlpI</curtain><br><br><curtain>https://docs.mcarc.top/</curtain><br><br>基岩版(手机)：<br><curtain>https://bbk.endyun.ltd/download（推荐）</curtain><br><curtain>https://mc233.endyun.ltd（静态）</curtain><br><curtain>https://www.123pan.com/s/dhm9-Fwr0A.html（旧版本）</curtain><br><br>APP下载（都复制浏览器打开）：<br><curtain>https://app.mcarc.top/</curtain><br>皮肤预览：<br><curtain>https://skin.endyun.ltd/</curtain><br>基岩版领域：<br><curtain>https://realms.mcarc.top/</curtain><br><br>Java版启动器(电脑)：<br><curtain>https://zihao-il.lanzouo.com/b0rwozud</curtain></q-text>
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" ><a at>没钱也没女装又丑的穷猫QAQ</a> 我版本库有问题</q-text>
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" >换了百度也下不了</q-text>
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" ><a at>没钱也没女装又丑的穷猫QAQ</a> 好心人能不能直接发个文件给我直接下</q-text>
@@ -53,5 +64,9 @@ import { QTagColors } from 'fake-qq-ui';
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" >还玩盗版</q-text>
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" >还这么繁琐？</q-text>
     <q-text name="⁺✞ʚ山田凉重度依赖ɞ✟" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2124864729&spec=100" >我看你家里也没有电脑吧！</q-text>
+    <q-tip>2025-08-11 21:49</q-tip>
+    <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >hi有8活动邀请您参加8月最新活动链接🔥，冲冲冲！！</q-text>
+    <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >www.kkidc.com/i/AIAtuhvMK！</q-text>
+    <q-tip>这货真是个人才，加群后就转发他那idc的广告链接，被踢了疯狂加群<curtain>纯SB玩意</curtain>,天才的是在入群申请里面填广告信息，这个idc真是养了<curtain>条</curtain>好<curtain>狗</curtain>人啊，最后你直接进黑名单吧</q-tip>
 
 </q-window>
