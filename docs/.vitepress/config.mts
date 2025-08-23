@@ -84,6 +84,14 @@ export default defineConfig({
     head: [
         ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
         ['meta', {name: 'theme-color', content: '#FFFFFF'}],
+        [
+            "script",
+            {
+                async: "",
+                src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3895263615276360",
+                crossorigin: "anonymous"
+            }
+        ]
     ],
 
     themeConfig: {
