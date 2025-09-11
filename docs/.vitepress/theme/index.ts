@@ -17,7 +17,6 @@ import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
 import VolumeBar from './components/VolumeBar.vue'
 
-import BackTop from "./components/BackTop.vue";
 
 import {FakeQQUI} from 'fake-qq-ui'
 import 'fake-qq-ui/styles/fake-qq-ui.css'

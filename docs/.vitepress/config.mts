@@ -37,6 +37,7 @@ function generateChatSidebar(): any[] {
         },
         {text: '无法确定记录', link: '/guide/未知时间.md'},
         {text: '语音记录', link: '/voices/index.md'},
+        {text: '牛至诗集', link: '/guide/牛至诗集.md'},
         {text: '黑名单记录', link: '/blacklist/index.md'},
     ]
 }
