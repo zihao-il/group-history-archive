@@ -304,8 +304,8 @@ packages:
     peerDependencies:
       vue: '>=3.2.0'
 
-  '@iconify-json/simple-icons@1.2.50':
-    resolution: {integrity: sha512-Z2ggRwKYEBB9eYAEi4NqEgIzyLhu0Buh4+KGzMPD6+xG7mk52wZJwLT/glDPtfslV503VtJbqzWqBUGkCMKOFA==}
+  '@iconify-json/simple-icons@1.2.51':
+    resolution: {integrity: sha512-vFH0QEHFG3rt9hZOR3oE/ZfAKFA7cS11UXttD/IphClEbiSTsPbpeeJ4kRYGDBUDmAKhBzk6jxHNG8VipwA69Q==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1492,7 +1492,7 @@ snapshots:
       giscus: 1.6.0
       vue: 3.5.21
 
-  '@iconify-json/simple-icons@1.2.50':
+  '@iconify-json/simple-icons@1.2.51':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -2410,7 +2410,7 @@ snapshots:
     dependencies:
       '@docsearch/css': 3.8.2
       '@docsearch/js': 3.8.2(@algolia/client-search@5.37.0)(search-insights@2.17.3)
-      '@iconify-json/simple-icons': 1.2.50
+      '@iconify-json/simple-icons': 1.2.51
       '@shikijs/core': 2.5.0
       '@shikijs/transformers': 2.5.0
       '@shikijs/types': 2.5.0
