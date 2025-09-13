@@ -29,6 +29,8 @@ const volume = ref(100)
     <q-voice name="" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=1296556133&spec=100" src="/voices/小王八晚安.wav" :volume="volume"></q-voice>
     <q-tip>2025-08-24 17:08</q-tip>
     <q-voice name="🀀" tag="LV100 传奇抗压王🐢" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2860986565&spec=100" src="/voices/东子2025-8-24-1.wav" :volume="volume">遇见即是上上签</q-voice>
+    <q-tip>2025-09-12 21:52</q-tip>
+    <q-voice name="🀀" tag="LV100 传奇抗压王🐢" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2860986565&spec=100" src="/voices/东子2025-9-12-1.wav" :volume="volume">遇见即是上上签</q-voice>
 
 </q-window>
 
