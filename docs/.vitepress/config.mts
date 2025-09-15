@@ -113,6 +113,7 @@ export default defineConfig({
                     items: [
                         {text: '聊天记录', link: '/guide/index.md'},
                         {text: '语音记录', link: '/voices/index.md'},
+                        {text: '牛至诗集', link: '/guide/牛至诗集.md'},
                         {text: '黑名单用户', link: '/blacklist/index.md'},
 
                     ]
