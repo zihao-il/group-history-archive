@@ -22,11 +22,15 @@ hero:
 features:
   - title: 自黑
     details: 内有自黑发言，请慎重阅读。
+    link: /guide/index.md
   - title: 自爆
     details: 内有自爆发言，请慎重阅读。
+    link: /guide/index.md
   - title: 逆天
     details: 内有逆天发言，请慎重阅读。
+    link: /guide/index.md
   - title: 抽象
     details: 内有抽象发言，请慎重阅读。
+    link: /guide/index.md
 ---
 
