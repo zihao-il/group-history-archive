@@ -1,0 +1,16 @@
+{
+  "name": "Q群发言档案馆",
+  "short_name": "Q群发言档案馆",
+  "start_url": ".",
+  "description": "记录群友各种逆天发言",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "256x256",
+      "type": "image/ico"
+    }
+  ]
+}

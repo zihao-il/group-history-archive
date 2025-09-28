@@ -85,6 +85,7 @@ export default defineConfig({
     head: [
         ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
         ['meta', {name: 'theme-color', content: '#FFFFFF'}],
+        ['link', {rel: 'manifest', href: '/manifest.webmanifest'}],
         [
             "script",
             {
