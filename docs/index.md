@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Q群发言档案馆"
   text: "记录群友各种逆天发言"
-  tagline: 谨慎查看阅读
+  tagline: 请谨慎阅读查看
   actions:
     - theme: brand
       text: 💩查看记录
