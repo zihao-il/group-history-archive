@@ -18,8 +18,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       vitepress-plugin-pagefind:
-        specifier: ^0.4.14
-        version: 0.4.14(pagefind@1.4.0)
+        specifier: ^0.4.15
+        version: 0.4.15(pagefind@1.4.0)
       vue:
         specifier: ^3.5.22
         version: 3.5.22
@@ -565,8 +565,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@sugarat/theme-shared@0.0.5':
-    resolution: {integrity: sha512-dqOhVZ5Hub9cGABh4vD4bC0QY3SaWhb8pZ1KxJk7at+W4gyXL0q4OOhp0b5LnQwM/ACUqf/ZAplhaTRU1qbt4Q==}
+  '@sugarat/theme-shared@0.0.6':
+    resolution: {integrity: sha512-858llnOYVBkzXy9/WICD/xNeGI3V+FDzfRaF8JACN/WIhyADB4crpjjgMgy04MgnE3QLUYiIH0ZvgFps1XOqSA==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1221,8 +1221,8 @@ packages:
   vitepress-plugin-comment-with-giscus@1.1.15:
     resolution: {integrity: sha512-1DJjgN+7SYvn5ZkjuSXPmz7nlqfcrh4qCGGviiZghA2ELXnaO2m9WY7m+RisPSaqCn90xqe0JbO2T4NMq8iUBg==}
 
-  vitepress-plugin-pagefind@0.4.14:
-    resolution: {integrity: sha512-rtB3RITPPt77vJnolo9D8YrKzVSe2B9Jajl5Yxd3ZiqmSEud5BhS8j2JRsEEGxb/YNcBAWru52Qb2HNX5RUojw==}
+  vitepress-plugin-pagefind@0.4.15:
+    resolution: {integrity: sha512-z1b7O/LTUKl+nteqTFEvER0/toHiVheqRtuzXWWznT7L438VKyQwEwKq7z8BMebQqYeMPmg6L6B7NF9cu+iFvw==}
     peerDependencies:
       pagefind: ^1.1.0
 
@@ -1696,7 +1696,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@sugarat/theme-shared@0.0.5':
+  '@sugarat/theme-shared@0.0.6':
     dependencies:
       cross-spawn: 7.0.6
       gray-matter: 4.0.3
@@ -2403,9 +2403,9 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  vitepress-plugin-pagefind@0.4.14(pagefind@1.4.0):
+  vitepress-plugin-pagefind@0.4.15(pagefind@1.4.0):
     dependencies:
-      '@sugarat/theme-shared': 0.0.5
+      '@sugarat/theme-shared': 0.0.6
       '@vueuse/core': 9.13.0(vue@3.5.22)
       javascript-stringify: 2.1.0
       pagefind: 1.4.0
