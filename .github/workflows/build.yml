@@ -13,8 +13,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout codeartifact
-        uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
