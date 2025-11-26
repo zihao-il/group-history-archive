@@ -64,18 +64,18 @@ export default defineConfig({
     },
 
     vite: {
-        // plugins: [
-        //     pagefindPlugin({
-        //         btnPlaceholder: '搜索发言',
-        //         placeholder: '搜索发言',
-        //         emptyText: '没有找到任何结果',
-        //         heading: '共: {{searchResult}} 条结果',
-        //         forceLanguage: 'zh-cn',
-        //         toSelect: '回车选择',
-        //         toNavigate: '上下键切换',
-        //         toClose: 'ESC 关闭搜索',
-        //         searchBy: '搜索提供者',
-        //     }),],
+        plugins: [
+            pagefindPlugin({
+                btnPlaceholder: '搜索发言',
+                placeholder: '搜索发言',
+                emptyText: '没有找到任何结果',
+                heading: '共: {{searchResult}} 条结果',
+                forceLanguage: 'zh-cn',
+                toSelect: '回车选择',
+                toNavigate: '上下键切换',
+                toClose: 'ESC 关闭搜索',
+                searchBy: '搜索提供者',
+            }),],
     },
 
     sitemap: {
@@ -133,11 +133,8 @@ export default defineConfig({
         },
 
         search: {
-            provider: 'algolia',
+            provider: 'local',
             options: {
-                appId: 'SD6MK33RGP',
-                apiKey: '7ebcf99c210e55b9afd8b39f584f8459',
-                indexName: 'qun_vitePress',
                 translations: {
                     button: {
                         buttonText: '搜索发言',
