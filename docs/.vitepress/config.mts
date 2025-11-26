@@ -133,8 +133,11 @@ export default defineConfig({
         },
 
         search: {
-            provider: 'local',
+            provider: 'algolia',
             options: {
+                appId: 'SD6MK33RGP',
+                apiKey: '7ebcf99c210e55b9afd8b39f584f8459',
+                indexName: 'qun_vitePress',
                 translations: {
                     button: {
                         buttonText: '搜索发言',
