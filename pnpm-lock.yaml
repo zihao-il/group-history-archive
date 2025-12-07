@@ -18,8 +18,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       vitepress-plugin-pagefind:
-        specifier: ^0.4.16
-        version: 0.4.16(pagefind@1.4.0)
+        specifier: ^0.4.17
+        version: 0.4.17(pagefind@1.4.0)(vitepress@1.6.4(@algolia/client-search@5.46.0)(postcss@8.5.6)(sass-embedded@1.93.3)(sass@1.93.3)(search-insights@2.17.3))
       vue:
         specifier: ^3.5.25
         version: 3.5.25
@@ -565,8 +565,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@sugarat/theme-shared@0.0.6':
-    resolution: {integrity: sha512-858llnOYVBkzXy9/WICD/xNeGI3V+FDzfRaF8JACN/WIhyADB4crpjjgMgy04MgnE3QLUYiIH0ZvgFps1XOqSA==}
+  '@sugarat/theme-shared@0.0.7':
+    resolution: {integrity: sha512-rFK+NF5ORXjxmisVjVKI1A2WWu/J2NMw367n9Dxy7rF4jJE8CaHqryu3vOLwp96RUBDbaN95ABT3E4wyaGzGKA==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1221,10 +1221,11 @@ packages:
   vitepress-plugin-comment-with-giscus@1.1.15:
     resolution: {integrity: sha512-1DJjgN+7SYvn5ZkjuSXPmz7nlqfcrh4qCGGviiZghA2ELXnaO2m9WY7m+RisPSaqCn90xqe0JbO2T4NMq8iUBg==}
 
-  vitepress-plugin-pagefind@0.4.16:
-    resolution: {integrity: sha512-P2rI06L9FepHnc/ANfZ2xir9I7mESgTdxsBLqR+Ni4FrWI/Ns6ybRmeqG/B5SDHLhelf7tQon01Ye7lYpwOV5g==}
+  vitepress-plugin-pagefind@0.4.17:
+    resolution: {integrity: sha512-cEiZbZJozW3jZki5Q407CFgMfrAH4zHN/uO9MDvIj3s9iJwZvhPznI6iihOfRqWFr2EzhhdjUrc7XDaeRHsThA==}
     peerDependencies:
       pagefind: ^1.1.0
+      vitepress: ^1 || ^2
 
   vitepress@1.6.4:
     resolution: {integrity: sha512-+2ym1/+0VVrbhNyRoFFesVvBvHAVMZMK0rw60E3X/5349M1GuVdKeazuksqopEdvkKwKGs21Q729jX81/bkBJg==}
@@ -1696,7 +1697,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@sugarat/theme-shared@0.0.6':
+  '@sugarat/theme-shared@0.0.7':
     dependencies:
       cross-spawn: 7.0.6
       gray-matter: 4.0.3
@@ -2403,12 +2404,13 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  vitepress-plugin-pagefind@0.4.16(pagefind@1.4.0):
+  vitepress-plugin-pagefind@0.4.17(pagefind@1.4.0)(vitepress@1.6.4(@algolia/client-search@5.46.0)(postcss@8.5.6)(sass-embedded@1.93.3)(sass@1.93.3)(search-insights@2.17.3)):
     dependencies:
-      '@sugarat/theme-shared': 0.0.6
+      '@sugarat/theme-shared': 0.0.7
       '@vueuse/core': 9.13.0(vue@3.5.25)
       javascript-stringify: 2.1.0
       pagefind: 1.4.0
+      vitepress: 1.6.4(@algolia/client-search@5.46.0)(postcss@8.5.6)(sass-embedded@1.93.3)(sass@1.93.3)(search-insights@2.17.3)
       vue: 3.5.25
       vue-command-palette: 0.1.4
     transitivePeerDependencies:
