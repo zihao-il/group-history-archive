@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "zihao_il",
   "license": "MIT",
-  "packageManager": "pnpm@10.27.0",
+  "packageManager": "pnpm@10.28.1",
   "devDependencies": {
     "medium-zoom": "^1.1.0",
-    "sass-embedded": "^1.97.1",
+    "sass-embedded": "^1.97.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },
@@ -22,6 +22,6 @@
     "fake-qq-ui": "^0.3.4",
     "pagefind": "^1.4.0",
     "vitepress-plugin-pagefind": "^0.4.18",
-    "vue": "^3.5.26"
+    "vue": "^3.5.27"
   }
 }
