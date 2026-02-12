@@ -5,7 +5,7 @@ import { QTagColors } from 'fake-qq-ui';
 
 </script>
 
-##         
+##          
 
 <q-window title="新朋友">
     <q-tip>2025-06-24 16:23:18</q-tip>
@@ -71,5 +71,22 @@ import { QTagColors } from 'fake-qq-ui';
     <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >hi有8活动邀请您参加8月最新活动链接🔥，冲冲冲！！</q-text>
     <q-text name="🇾 🇾 🇹 " tag="LV1 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3976119958&spec=100" >www.<curtain>kkidc</curtain>.com/i/AIAtuhvMK！</q-text>
     <q-tip>🖕这货真是个人才，加群后就转发他那idc的广告链接，被踢了疯狂加群还用0星小号<curtain>纯SB玩意</curtain>,天才的是在入群申请里面填广告信息，这个idc真是养了<curtain>条</curtain>好<curtain>狗</curtain>人啊，最后建议你<curtain>死个妈</curtain>有多远滚多远</q-tip>
+
+</q-window>
+
+
+
+<br>
+<br>
+
+<q-window title="Minecraft资源群">
+    <q-tip>2026-02-12 15:42</q-tip>
+    <q-text name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">怎么下载我的世界基岩版</q-text>
+    <q-text name="群摆子" tag="LV100 群摆子" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3030376163&spec=100">Minecraft</q-text>
+    <q-text name="蜜桃酱" tag="LV100 垃圾机器人" isBot :tag-color="QTagColors.blue" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=375911869&spec=100">有问题先看下面文档后再问：<br><curtain>https://docs.qq.com/doc/DY3RZaGhBQnphdlpI</curtain><br><br><curtain>https://docs.mcarc.top/</curtain><br><br>基岩版(手机)：<br><curtain>https://bbk.endyun.ltd/download（推荐）</curtain><br><curtain>https://mc233.endyun.ltd（静态）</curtain><br><curtain>https://www.123pan.com/s/dhm9-Fwr0A.html（旧版本）</curtain><br><br>APP下载（都复制浏览器打开）：<br><curtain>https://app.mcarc.top/</curtain><br>皮肤预览：<br><curtain>https://skin.endyun.ltd/</curtain><br>基岩版领域：<br><curtain>https://realms.mcarc.top/</curtain><br><br>Java版启动器(电脑)：<br><curtain>https://zihao-il.lanzouo.com/b0rwozud</curtain></q-text>
+    <q-tip>2026-02-12 15:56</q-tip>
+    <q-reply target="蜜桃酱" replyText="有问题先看下面文档后再问：..." name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">我想现在就玩我的世界基岩版，我是手机端 </q-reply>
+    <q-tip>2026-02-12 17:10</q-tip>
+    <q-text name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">傻子操他妈全都傻逼吃，问大半天的说什么买快递有什么资源去什么讲的呀乱，操你妈</q-text>
 
 </q-window>
