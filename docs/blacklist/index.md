@@ -5,7 +5,7 @@ import { QTagColors } from 'fake-qq-ui';
 
 </script>
 
-##          
+##           
 
 <q-window title="新朋友">
     <q-tip>2025-06-24 16:23:18</q-tip>
@@ -86,7 +86,13 @@ import { QTagColors } from 'fake-qq-ui';
     <q-text name="蜜桃酱" tag="LV100 垃圾机器人" isBot :tag-color="QTagColors.blue" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=375911869&spec=100">有问题先看下面文档后再问：<br><curtain>https://docs.qq.com/doc/DY3RZaGhBQnphdlpI</curtain><br><br><curtain>https://docs.mcarc.top/</curtain><br><br>基岩版(手机)：<br><curtain>https://bbk.endyun.ltd/download（推荐）</curtain><br><curtain>https://mc233.endyun.ltd（静态）</curtain><br><curtain>https://www.123pan.com/s/dhm9-Fwr0A.html（旧版本）</curtain><br><br>APP下载（都复制浏览器打开）：<br><curtain>https://app.mcarc.top/</curtain><br>皮肤预览：<br><curtain>https://skin.endyun.ltd/</curtain><br>基岩版领域：<br><curtain>https://realms.mcarc.top/</curtain><br><br>Java版启动器(电脑)：<br><curtain>https://zihao-il.lanzouo.com/b0rwozud</curtain></q-text>
     <q-tip>2026-02-12 15:56</q-tip>
     <q-reply target="蜜桃酱" replyText="有问题先看下面文档后再问：..." name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">我想现在就玩我的世界基岩版，我是手机端 </q-reply>
+    <q-text name="雪碧" tag="LV100 雪碧" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=488741813&spec=100"><a at>@群摆子</a> 给你一拳</q-text>
+    <q-reply target="雪碧" replyText="@群摆子 给你一拳" name="群摆子" tag="LV100 群摆子" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3030376163&spec=100"><a at>@雪碧</a> 回你一拳</q-reply>
+    <q-text name="作死·思念蜜桃" tag="LV100 作死2019🥰" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2158924922&spec=100"><a at>@群摆子</a> <a at>@雪碧</a> 给你俩一人一拳</q-text>
+    <q-reply target="作死·思念蜜桃" replyText="@群摆子 @雪碧 给你俩一人一拳" name="群摆子" tag="LV100 群摆子" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3030376163&spec=100"><a at>@作死·思念蜜桃</a> 回你两拳</q-reply>
+    <q-text name="小白中的小白" tag="LV100 枫轻舞" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2859772560&spec=100">给你仨一人一拳</q-text>
+    <q-reply target="小白中的小白" replyText="给你仨一人一拳" name="群摆子" tag="LV100 群摆子" :tag-color="QTagColors.purple" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=3030376163&spec=100"><a at>@小白中的小白</a> 给你仨拳</q-reply>
     <q-tip>2026-02-12 17:10</q-tip>
-    <q-text name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">傻子操他妈全都傻逼吃，问大半天的说什么买快递有什么资源去什么讲的呀乱，操你妈</q-text>
+    <q-text name="六花" tag="LV2 僵尸" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=605908014&spec=100">傻子<curtain>操他妈</curtain>全都<curtain>傻逼</curtain>吃，问大半天的说什么买快递有什么资源去什么讲的呀乱，<curtain>操你妈</curtain></q-text>
 
 </q-window>
