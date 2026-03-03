@@ -155,7 +155,7 @@ export default defineConfig({
 
         footer: {
             message: 'MIT License',
-            copyright: 'Copyright © 2025 Q群发言档案馆',
+            copyright: `Copyright © 2025-${new Date().getFullYear()} Q群发言档案馆`,
         },
 
         docFooter: {
