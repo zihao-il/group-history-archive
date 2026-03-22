@@ -25,7 +25,7 @@ import { QTagColors } from 'fake-qq-ui';
     <q-text name="new" tag="LV0" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=936242554&spec=100" >申请加入Minecraft资源群x9</q-text>
     <q-tip>🖕<curtain>SB玩意</curtain>疯狂加群打广告，被踢后还用小号加群继续打广告</q-tip>
     <q-tip>2026-03-22 11:50</q-tip>
-    <q-text name="挽风" tag="LV25" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2667~~~~925315&spec=100" >申请加入Minecraft资源群<br>傻逼</q-text>
+    <q-text name="挽风" tag="LV25" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2667925315&spec=100" >申请加入Minecraft资源群<br>傻逼</q-text>
     <q-text name="挽风" tag="LV25" :tag-color="QTagColors.grey" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=2667925315&spec=100" >申请加入Minecraft资源群<br>你妈</q-text>
 
 </q-window>
