@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "zihao_il",
   "license": "MIT",
-  "packageManager": "pnpm@11.10.0",
+  "packageManager": "pnpm@11.9.0",
   "devDependencies": {
     "medium-zoom": "^1.1.0",
     "sass-embedded": "^1.100.0",
