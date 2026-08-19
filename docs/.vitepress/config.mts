@@ -1,5 +1,5 @@
 import {defineConfig} from 'vitepress'
-import {pagefindPlugin} from 'vitepress-plugin-pagefind'
+import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind'
 import fs from 'fs'
 import path from 'path'
 
@@ -75,6 +75,7 @@ export default defineConfig({
                 toNavigate: '上下键切换',
                 toClose: 'ESC 关闭搜索',
                 searchBy: '搜索提供者',
+                customSearchQuery: chineseSearchOptimize
             }),],
     },
 
