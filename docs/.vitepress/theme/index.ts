@@ -2,23 +2,21 @@
 import DefaultTheme from 'vitepress/theme';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import {useData, useRoute} from 'vitepress';
-import {onMounted, h, watch} from 'vue';
+import type {App} from 'vue';
+import {onMounted, watch} from 'vue';
 import './styles.css'
 import '@bprogress/core/css';
 import {BProgress} from '@bprogress/core';
 import mediumZoom from 'medium-zoom';
 import MyLayout from './components/Layout.vue'
+import {FakeQQUI} from 'fake-qq-ui';
 
 // VolumeBar QWindow RubyCurtain Curtain on code from: https://github.com/GraiaCommunity/Docs
 // License: MIT
-
 import Curtain from "./components/Curtain.vue"
 import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
 import VolumeBar from './components/VolumeBar.vue'
-
-
-import {FakeQQUI} from 'fake-qq-ui'
 import 'fake-qq-ui/styles/fake-qq-ui.css'
 import 'fake-qq-ui/styles/light.scss'
 import 'fake-qq-ui/styles/dark.scss'
@@ -27,7 +25,7 @@ import 'fake-qq-ui/styles/dark.scss'
 export default {
     extends: DefaultTheme,
     Layout: MyLayout,
-    enhanceApp({app}) {
+    enhanceApp({app}: { app: App }) {
         app.component('Curtain', Curtain)
         app.component('RubyCurtain', RubyCurtain)
         app.component('QWindow', QWindow)
