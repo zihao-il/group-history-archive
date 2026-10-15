@@ -107,7 +107,7 @@ const years: YearItem[] = [
         ],
     },
     {
-        year: '未知时间',
+        year: '其他',
         months: [
             {label: '未知时间', href: '/guide/未知时间', fullWidth: true},
         ],
