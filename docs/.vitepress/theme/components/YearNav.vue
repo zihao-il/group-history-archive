@@ -1,131 +1,143 @@
 <script lang="ts" setup>
+interface MonthItem {
+    label: string
+    href: string
+    fullWidth?: boolean
+}
 
+interface YearItem {
+    year: string
+    unit?: string
+    months: MonthItem[]
+}
+
+const years: YearItem[] = [
+    {
+        year: '2026',
+        unit: '年',
+        months: [
+            {label: '10月', href: '/guide/2026/10月.md'},
+            {label: '9月', href: '/guide/2026/9月.md'},
+            {label: '8月', href: '/guide/2026/8月.md'},
+            {label: '7月', href: '/guide/2026/7月.md'},
+            {label: '6月', href: '/guide/2026/6月.md'},
+            {label: '5月', href: '/guide/2026/5月.md'},
+            {label: '4月', href: '/guide/2026/4月.md'},
+            {label: '3月', href: '/guide/2026/3月.md'},
+            {label: '2月', href: '/guide/2026/2月.md'},
+            {label: '1月', href: '/guide/2026/1月.md'},
+        ],
+    },
+    {
+        year: '2025',
+        unit: '年',
+        months: [
+            {label: '12月', href: '/guide/2025/12月.md'},
+            {label: '11月', href: '/guide/2025/11月.md'},
+            {label: '10月', href: '/guide/2025/10月.md'},
+            {label: '9月', href: '/guide/2025/9月.md'},
+            {label: '8月', href: '/guide/2025/8月.md'},
+            {label: '7月', href: '/guide/2025/7月.md'},
+            {label: '6月', href: '/guide/2025/6月.md'},
+            {label: '5月', href: '/guide/2025/5月.md'},
+            {label: '4月', href: '/guide/2025/4月.md'},
+            {label: '3月', href: '/guide/2025/3月.md'},
+            {label: '2月', href: '/guide/2025/2月.md'},
+            {label: '1月', href: '/guide/2025/1月.md'},
+        ],
+    },
+    {
+        year: '2024',
+        unit: '年',
+        months: [
+            {label: '12月', href: '/guide/2024/12月.md'},
+            {label: '11月', href: '/guide/2024/11月.md'},
+            {label: '10月', href: '/guide/2024/10月.md'},
+            {label: '9月', href: '/guide/2024/9月.md'},
+            {label: '8月', href: '/guide/2024/8月.md'},
+            {label: '7月', href: '/guide/2024/7月.md'},
+            {label: '6月', href: '/guide/2024/6月.md'},
+            {label: '5月', href: '/guide/2024/5月.md'},
+            {label: '4月', href: '/guide/2024/4月.md'},
+            {label: '3月', href: '/guide/2024/3月.md'},
+            {label: '2月', href: '/guide/2024/2月.md'},
+            {label: '1月', href: '/guide/2024/1月.md'},
+        ],
+    },
+    {
+        year: '2023',
+        unit: '年',
+        months: [
+            {label: '12月', href: '/guide/2023/12月.md'},
+            {label: '11月', href: '/guide/2023/11月.md'},
+            {label: '10月', href: '/guide/2023/10月.md'},
+            {label: '9月', href: '/guide/2023/9月.md'},
+            {label: '8月', href: '/guide/2023/8月.md'},
+            {label: '7月', href: '/guide/2023/7月.md'},
+            {label: '6月', href: '/guide/2023/6月.md'},
+            {label: '5月', href: '/guide/2023/5月.md'},
+            {label: '4月', href: '/guide/2023/4月.md'},
+            {label: '3月', href: '/guide/2023/3月.md'},
+            {label: '2月', href: '/guide/2023/2月.md'},
+            {label: '1月', href: '/guide/2023/1月.md'},
+        ],
+    },
+    {
+        year: '2022',
+        unit: '年',
+        months: [
+            {label: '10月', href: '/guide/2022/10月.md'},
+            {label: '8月', href: '/guide/2022/8月.md'},
+            {label: '7月', href: '/guide/2022/7月.md'},
+            {label: '6月', href: '/guide/2022/6月.md'},
+            {label: '5月', href: '/guide/2022/5月.md'},
+            {label: '4月', href: '/guide/2022/4月.md'},
+            {label: '2月', href: '/guide/2022/2月.md'},
+            {label: '1月', href: '/guide/2022/1月.md'},
+        ],
+    },
+    {
+        year: '2021',
+        unit: '年',
+        months: [
+            {label: '12月', href: '/guide/2021/12月.md'},
+            {label: '10月', href: '/guide/2021/10月.md'},
+            {label: '9月', href: '/guide/2021/9月.md'},
+            {label: '8月', href: '/guide/2021/8月.md'},
+        ],
+    },
+    {
+        year: '未知时间',
+        months: [
+            {label: '未知时间', href: '/guide/未知时间.md', fullWidth: true},
+        ],
+    },
+]
 </script>
 
 <template>
     <div class="year-nav">
-
-        <section class="year-card">
+        <section v-for="item in years" :key="item.year" class="year-card">
             <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2026</span><span class="year-unit">年</span></h2>
+                <h2 class="year-title">
+                    <span class="year-num">{{ item.year }}</span>
+                    <span v-if="item.unit" class="year-unit">{{ item.unit }}</span>
+                </h2>
             </div>
             <div class="month-grid">
-                <a class="month-link" href="/guide/2026/10月.md">10月</a>
-                <a class="month-link" href="/guide/2026/9月.md">9月</a>
-                <a class="month-link" href="/guide/2026/8月.md">8月</a>
-                <a class="month-link" href="/guide/2026/7月.md">7月</a>
-                <a class="month-link" href="/guide/2026/6月.md">6月</a>
-                <a class="month-link" href="/guide/2026/5月.md">5月</a>
-                <a class="month-link" href="/guide/2026/4月.md">4月</a>
-                <a class="month-link" href="/guide/2026/3月.md">3月</a>
-                <a class="month-link" href="/guide/2026/2月.md">2月</a>
-                <a class="month-link" href="/guide/2026/1月.md">1月</a>
+                <a
+                    v-for="month in item.months"
+                    :key="month.href"
+                    :class="{ 'full-width': month.fullWidth }"
+                    :href="month.href"
+                    class="month-link"
+                >{{ month.label }}</a>
             </div>
         </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2025</span><span class="year-unit">年</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link" href="/guide/2025/12月.md">12月</a>
-                <a class="month-link" href="/guide/2025/11月.md">11月</a>
-                <a class="month-link" href="/guide/2025/10月.md">10月</a>
-                <a class="month-link" href="/guide/2025/9月.md">9月</a>
-                <a class="month-link" href="/guide/2025/8月.md">8月</a>
-                <a class="month-link" href="/guide/2025/7月.md">7月</a>
-                <a class="month-link" href="/guide/2025/6月.md">6月</a>
-                <a class="month-link" href="/guide/2025/5月.md">5月</a>
-                <a class="month-link" href="/guide/2025/4月.md">4月</a>
-                <a class="month-link" href="/guide/2025/3月.md">3月</a>
-                <a class="month-link" href="/guide/2025/2月.md">2月</a>
-                <a class="month-link" href="/guide/2025/1月.md">1月</a>
-            </div>
-        </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2024</span><span class="year-unit">年</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link" href="/guide/2024/12月.md">12月</a>
-                <a class="month-link" href="/guide/2024/11月.md">11月</a>
-                <a class="month-link" href="/guide/2024/10月.md">10月</a>
-                <a class="month-link" href="/guide/2024/9月.md">9月</a>
-                <a class="month-link" href="/guide/2024/8月.md">8月</a>
-                <a class="month-link" href="/guide/2024/7月.md">7月</a>
-                <a class="month-link" href="/guide/2024/6月.md">6月</a>
-                <a class="month-link" href="/guide/2024/5月.md">5月</a>
-                <a class="month-link" href="/guide/2024/4月.md">4月</a>
-                <a class="month-link" href="/guide/2024/3月.md">3月</a>
-                <a class="month-link" href="/guide/2024/2月.md">2月</a>
-                <a class="month-link" href="/guide/2024/1月.md">1月</a>
-            </div>
-        </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2023</span><span class="year-unit">年</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link" href="/guide/2023/12月.md">12月</a>
-                <a class="month-link" href="/guide/2023/11月.md">11月</a>
-                <a class="month-link" href="/guide/2023/10月.md">10月</a>
-                <a class="month-link" href="/guide/2023/9月.md">9月</a>
-                <a class="month-link" href="/guide/2023/8月.md">8月</a>
-                <a class="month-link" href="/guide/2023/7月.md">7月</a>
-                <a class="month-link" href="/guide/2023/6月.md">6月</a>
-                <a class="month-link" href="/guide/2023/5月.md">5月</a>
-                <a class="month-link" href="/guide/2023/4月.md">4月</a>
-                <a class="month-link" href="/guide/2023/3月.md">3月</a>
-                <a class="month-link" href="/guide/2023/2月.md">2月</a>
-                <a class="month-link" href="/guide/2023/1月.md">1月</a>
-            </div>
-        </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2022</span><span class="year-unit">年</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link" href="/guide/2022/10月.md">10月</a>
-                <a class="month-link" href="/guide/2022/8月.md">8月</a>
-                <a class="month-link" href="/guide/2022/7月.md">7月</a>
-                <a class="month-link" href="/guide/2022/6月.md">6月</a>
-                <a class="month-link" href="/guide/2022/5月.md">5月</a>
-                <a class="month-link" href="/guide/2022/4月.md">4月</a>
-                <a class="month-link" href="/guide/2022/2月.md">2月</a>
-                <a class="month-link" href="/guide/2022/1月.md">1月</a>
-            </div>
-        </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">2021</span><span class="year-unit">年</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link" href="/guide/2021/12月.md">12月</a>
-                <a class="month-link" href="/guide/2021/10月.md">10月</a>
-                <a class="month-link" href="/guide/2021/9月.md">9月</a>
-                <a class="month-link" href="/guide/2021/8月.md">8月</a>
-            </div>
-        </section>
-
-        <section class="year-card">
-            <div class="year-header">
-                <h2 class="year-title"><span class="year-num">未知时间</span></h2>
-            </div>
-            <div class="month-grid">
-                <a class="month-link full-width" href="/guide/未知时间.md">未知时间</a>
-            </div>
-        </section>
-
     </div>
-
 </template>
 
 <style scoped>
-/* 年份导航卡片 */
 .year-nav {
     display: grid;
     margin: 20px 0 32px;
@@ -146,7 +158,6 @@
     }
 }
 
-/* 卡片容器：贴合 VitePress 柔和背景与边框风格 */
 .vp-doc .year-card {
     margin: 0;
     padding: 18px 20px 20px;
@@ -163,7 +174,6 @@
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* 卡片头部与下划线（长度拉满） */
 .vp-doc .year-card .year-header {
     display: flex;
     align-items: center;
@@ -173,7 +183,6 @@
     border-bottom: 2px solid var(--vp-c-brand-1);
 }
 
-/* 年份标题重置 VitePress h2 默认间距与边框 */
 .vp-doc .year-card h2.year-title,
 .vp-doc .year-card .year-title {
     display: flex;
@@ -186,7 +195,6 @@
     gap: 3px;
 }
 
-/* 年份数字：更大字体并使用主题色 */
 .vp-doc .year-card .year-num {
     font-size: 1.55rem;
     font-weight: 700;
@@ -195,19 +203,16 @@
     color: var(--vp-c-brand-1);
 }
 
-/* “年”字：字号缩小并使用次要文字色 */
 .vp-doc .year-card .year-unit {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--vp-c-text-2);
 }
 
-/* 隐藏 VitePress 在 h2 上生成的锚点跳转符号 */
 .vp-doc .year-card .header-anchor {
     display: none !important;
 }
 
-/* 月份网格 */
 .vp-doc .year-card .month-grid {
     display: grid;
     padding-top: 14px;
@@ -215,7 +220,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* 月份按钮：贴合 VitePress 按钮质感 */
 .vp-doc .year-card .month-link {
     font-size: 0.9rem;
     font-weight: 500;
@@ -234,7 +238,6 @@
     background-color: var(--vp-c-bg);
 }
 
-/* 未知时间或单项通栏展示，避免格子过窄 */
 .vp-doc .year-card .month-link.full-width,
 .vp-doc .year-card .month-grid > .month-link:only-child {
     font-size: 0.95rem;
@@ -259,7 +262,6 @@
     background-color: var(--vp-c-brand-1);
 }
 
-/* 手机端适配优化 */
 @media (max-width: 639px) {
     .vp-doc .year-card {
         padding: 16px 16px 18px;
