@@ -17,6 +17,7 @@ import Curtain from "./components/Curtain.vue"
 import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
 import VolumeBar from './components/VolumeBar.vue'
+import YearNav from './components/YearNav.vue'
 import 'fake-qq-ui/styles/fake-qq-ui.css'
 import 'fake-qq-ui/styles/light.scss'
 import 'fake-qq-ui/styles/dark.scss'
@@ -30,6 +31,7 @@ export default {
         app.component('RubyCurtain', RubyCurtain)
         app.component('QWindow', QWindow)
         app.component('VolumeBar', VolumeBar)
+        app.component('YearNav', YearNav)
         app.use(FakeQQUI)
     },
     setup() {
