@@ -1,0 +1,34 @@
+import { default as QTagColors } from '../lib/QTagColors';
+import { default as QTagCustomize } from '../lib/QTagCustomize';
+type __VLS_Props = {
+    self?: boolean;
+    name: string;
+    avatar?: string;
+    tag?: string;
+    tagColor?: QTagColors | keyof typeof QTagColors | QTagCustomize;
+    isBot?: boolean;
+    src: string;
+    alt?: string;
+    isFile?: boolean;
+    fileName?: string;
+    fileSize?: string;
+    maxWidth?: string;
+    maxHeight?: string;
+    canDownload?: boolean;
+};
+declare const __VLS_export: import('vue').DefineComponent<__VLS_Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<__VLS_Props> & Readonly<{}>, {
+    self: boolean;
+    avatar: string;
+    tag: string;
+    tagColor: "sage_green" | "red" | "orange" | "purple" | "blue" | "grey" | QTagCustomize | QTagColors;
+    isBot: boolean;
+    alt: string;
+    isFile: boolean;
+    fileName: string;
+    fileSize: string;
+    maxWidth: string;
+    maxHeight: string;
+    canDownload: boolean;
+}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+declare const _default: typeof __VLS_export;
+export default _default;
