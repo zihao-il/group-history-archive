@@ -32,6 +32,9 @@ features:
   - title: 抽象
     details: 内有抽象发言，请慎重阅读。
     link: /guide/index.md
+  - title: 神人
+    details: 内有神人发言，请慎重阅读。
+    link: /guide/index.md
   - title: 性压抑
     details: 内有性压抑发言，请慎重阅读。
     link: /guide/index.md

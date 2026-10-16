@@ -38,6 +38,7 @@ function generateChatSidebar(): any[] {
         {text: '无法确定记录', link: '/guide/未知时间.md'},
         {text: '语音记录', link: '/voices/index.md'},
         {text: '牛至诗集', link: '/guide/牛至诗集.md'},
+        {text: '神人合集', link: '/guide/神人合集.md'},
         {text: '黑名单记录', link: '/blacklist/index.md'},
     ]
 }
@@ -116,6 +117,7 @@ export default defineConfig({
                         {text: '聊天记录', link: '/guide/index.md'},
                         {text: '语音记录', link: '/voices/index.md'},
                         {text: '牛至诗集', link: '/guide/牛至诗集.md'},
+                        {text: '神人合集', link: '/guide/神人合集.md'},
                         {text: '黑名单用户', link: '/blacklist/index.md'},
 
                     ]

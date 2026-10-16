@@ -24,6 +24,6 @@
     "fake-qq-ui": "^0.3.4",
     "pagefind": "^1.5.2",
     "vitepress-plugin-pagefind": "^0.4.25",
-    "vue": "^3.5.43"
+    "vue": "^3.5.44"
   }
 }
