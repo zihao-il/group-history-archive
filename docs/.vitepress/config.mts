@@ -65,6 +65,13 @@ export default defineConfig({
     },
 
     vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: 'modern-compiler'
+                }
+            }
+        },
         plugins: [
             pagefindPlugin({
                 btnPlaceholder: '搜索发言',
