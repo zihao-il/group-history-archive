@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "medium-zoom": "^1.1.2",
-    "sass-embedded": "^1.107.1",
+    "sass-embedded": "^1.108.1",
     "typescript": "^6.0.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
@@ -24,6 +24,6 @@
     "fake-qq-ui": "file:libs/fake-qq-ui",
     "pagefind": "^1.6.0",
     "vitepress-plugin-pagefind": "^0.4.26",
-    "vue": "^3.5.44"
+    "vue": "^3.5.45"
   }
 }
