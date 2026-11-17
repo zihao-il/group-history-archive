@@ -1,9 +1,8 @@
 // .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme';
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import {useData, useRoute} from 'vitepress';
 import type {App} from 'vue';
 import {onMounted, watch} from 'vue';
+import {useData, useRoute} from 'vitepress';
 import './styles.css'
 import '@bprogress/core/css';
 import {BProgress} from '@bprogress/core';
@@ -38,7 +37,7 @@ export default {
         BProgress.configure({
             showSpinner: false
         });
-        const {frontmatter, isDark} = useData();
+        const {isDark} = useData();
         const route = useRoute();
         watch(
             () => route.path,
@@ -66,21 +65,6 @@ export default {
                 updateThemeColor(newVal);
             });
         });
-
-        giscusTalk({
-                repo: 'zihao-il/group-history-archive',
-                repoId: 'R_kgDOO4leAA',
-                category: 'Announcements',
-                categoryId: 'DIC_kwDOO4leAM4CrO7l',
-                mapping: 'pathname',
-                inputPosition: 'bottom',
-                lang: 'zh-CN',
-            },
-            {
-                frontmatter, route
-            },
-            true
-        );
 
     },
 };
