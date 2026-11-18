@@ -1,5 +1,5 @@
 import { Fragment as e, createBlock as t, createCommentVNode as n, createElementBlock as r, createElementVNode as i, createTextVNode as a, createVNode as o, defineComponent as s, getCurrentScope as c, isRef as l, normalizeClass as u, normalizeStyle as d, onBeforeUnmount as f, onMounted as p, onScopeDispose as m, openBlock as h, ref as g, renderList as _, renderSlot as v, resolveDynamicComponent as y, shallowReadonly as b, shallowRef as x, toDisplayString as S, toValue as C, vShow as w, watch as T, withCtx as E, withDirectives as D, withModifiers as O } from "vue";
-//#region src/package/components/QHeader.vue?vue&type=script&setup=true&lang.ts
+// src/package/components/QHeader.vue?vue&type=script&setup=true&lang.ts
 var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 	__name: "QHeader",
 	props: { height: { default: 45 } },
@@ -17,21 +17,21 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 	let n = e.__vccOpts || e;
 	for (let [e, r] of t) n[e] = r;
 	return n;
-}, M = /*#__PURE__*/ j(A, [["__scopeId", "data-v-014fb637"]]), ee = { class: "qq_container" }, N = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, M = /*#__PURE__*/ j(A, [["__scopeId", "data-v-014fb637"]]), N = { class: "qq_container" }, P = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	name: "QMain",
 	__name: "QMain",
 	setup(e) {
-		return (e, t) => (h(), r("main", ee, [v(e.$slots, "default", {}, void 0, !0)]));
+		return (e, t) => (h(), r("main", N, [v(e.$slots, "default", {}, void 0, !0)]));
 	}
-}), [["__scopeId", "data-v-ce48c77a"]]), P = /* @__PURE__ */ function(e) {
+}), [["__scopeId", "data-v-ce48c77a"]]), F = /* @__PURE__ */ function(e) {
 	return e.sage_green = "sage_green", e.red = "red", e.orange = "orange", e.purple = "purple", e.blue = "blue", e.grey = "grey", e;
-}(P || {}), F = { class: "qq-message__avatar-span" }, I = {
+}(F || {}), ee = { class: "qq-message__avatar-span" }, I = {
 	key: 1,
 	class: "qq-message__text-avatar"
-}, te = { class: "qq-message__user-name nocopy qq-text-ellipsis" }, ne = { class: "qq-text-ellipsis" }, re = {
+}, L = { class: "qq-message__user-name nocopy qq-text-ellipsis" }, te = { class: "qq-text-ellipsis" }, ne = {
 	key: 2,
 	class: "qq-bot-label qq-bot-label--middle qq-bot-label--mini"
-}, ie = { class: "message-content__wrapper" }, L = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, re = { class: "message-content__wrapper" }, R = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QMessageBase",
 	props: {
 		self: {
@@ -41,7 +41,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		name: {},
 		avatar: { default: void 0 },
 		tag: { default: void 0 },
-		tagColor: { default: P.grey },
+		tagColor: { default: F.grey },
 		isBot: {
 			type: Boolean,
 			default: !1
@@ -49,13 +49,13 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 	},
 	setup(e) {
 		return (t, a) => (h(), r("section", { class: u(["message-container", e.self ? ["message-container--self", "message-container--align-right"] : ""]) }, [
-			i("div", F, [e.avatar ? (h(), r("div", {
+			i("div", ee, [e.avatar ? (h(), r("div", {
 				key: 0,
 				style: d({ backgroundImage: `url(${e.avatar})` }),
 				class: "qq-message__avatar"
 			}, null, 4)) : (h(), r("div", I, [i("span", null, S(e.name[0]), 1)]))]),
-			i("div", te, [
-				i("span", ne, S(e.name), 1),
+			i("div", L, [
+				i("span", te, S(e.name), 1),
 				e.tag && typeof e.tagColor == "string" ? (h(), r("div", {
 					key: 0,
 					class: u(["q-tag qq-message__user-label", [`q-tag--${e.tagColor}`]])
@@ -67,7 +67,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 						color: e.tagColor.color
 					})
 				}, S(e.tag), 5)) : n("", !0),
-				e.isBot ? (h(), r("label", re, [...a[0] ||= [i("i", {
+				e.isBot ? (h(), r("label", ne, [...a[0] ||= [i("i", {
 					class: "q-svg-icon q-icon",
 					style: {
 						width: "1em",
@@ -85,16 +85,16 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 					fill: "currentColor"
 				})])], -1)]])) : n("", !0)
 			]),
-			i("div", ie, [v(t.$slots, "default", {}, void 0, !0)])
+			i("div", re, [v(t.$slots, "default", {}, void 0, !0)])
 		], 2));
 	}
-}), [["__scopeId", "data-v-e8e4e08e"]]), ae = { class: "reply-title" }, oe = { class: "reply-info" }, se = { class: "qq-text-ellipsis" }, ce = { class: "reply-content" }, le = {
+}), [["__scopeId", "data-v-e8e4e08e"]]), ie = { class: "reply-title" }, ae = { class: "reply-info" }, oe = { class: "qq-text-ellipsis" }, se = { class: "reply-content" }, ce = {
 	key: 0,
 	class: "pic"
-}, ue = { class: "image nocopy" }, R = ["alt", "src"], z = {
+}, le = { class: "image nocopy" }, ue = ["alt", "src"], de = {
 	key: 1,
 	class: "mixed-container qq-text-ellipsis"
-}, B = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, fe = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QReplyBase",
 	props: {
 		self: {
@@ -109,7 +109,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		maxImgHeight: { default: "220px" }
 	},
 	setup(e) {
-		return (t, n) => (h(), r("div", { class: u(["reply-element nocopy", e.self ? ["reply-element--self"] : ""]) }, [i("div", ae, [i("div", oe, [i("span", se, S(e.target), 1)])]), i("div", ce, [e.replyImageUrl ? (h(), r("div", le, [i("div", ue, [i("img", {
+		return (t, n) => (h(), r("div", { class: u(["reply-element nocopy", e.self ? ["reply-element--self"] : ""]) }, [i("div", ie, [i("div", ae, [i("span", oe, S(e.target), 1)])]), i("div", se, [e.replyImageUrl ? (h(), r("div", ce, [i("div", le, [i("img", {
 			class: "image-content",
 			style: d({
 				"--max-image-width": e.maxImgWidth,
@@ -117,9 +117,9 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			}),
 			alt: e.replyImageAlt,
 			src: e.replyImageUrl
-		}, null, 12, R)])])) : (h(), r("span", z, S(e.replyText), 1))])], 2));
+		}, null, 12, ue)])])) : (h(), r("span", de, S(e.replyText), 1))])], 2));
 	}
-}), [["__scopeId", "data-v-3a432c13"]]), V = { class: "message-content reply-message__inner" }, H = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}), [["__scopeId", "data-v-3a432c13"]]), z = { class: "message-content reply-message__inner" }, B = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QReply",
 	props: {
 		self: {
@@ -142,7 +142,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		maxImgHeight: { default: "220px" }
 	},
 	setup(e) {
-		return (n, r) => (h(), t(L, {
+		return (n, r) => (h(), t(R, {
 			self: e.self,
 			name: e.name,
 			avatar: e.avatar,
@@ -150,7 +150,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"tag-color": e.tagColor,
 			"is-bot": e.isBot
 		}, {
-			default: E(() => [i("div", { class: u(["msg-content-container reply-message__container", e.self ? "container--self" : "container--others"]) }, [i("div", V, [o(B, {
+			default: E(() => [i("div", { class: u(["msg-content-container reply-message__container", e.self ? "container--self" : "container--others"]) }, [i("div", z, [o(fe, {
 				self: e.self,
 				target: e.target,
 				"reply-text": e.replyText,
@@ -177,7 +177,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"is-bot"
 		]));
 	}
-}), [["__scopeId", "data-v-57c4891a"]]), U = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}), [["__scopeId", "data-v-57c4891a"]]), V = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QText",
 	props: {
 		self: {
@@ -196,7 +196,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		maxImgHeight: { default: "250px" }
 	},
 	setup(e) {
-		return (n, r) => (h(), t(L, {
+		return (n, r) => (h(), t(R, {
 			self: e.self,
 			name: e.name,
 			avatar: e.avatar,
@@ -221,14 +221,14 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"is-bot"
 		]));
 	}
-}), [["__scopeId", "data-v-c26b7d0c"]]), de = ["href", "download"], fe = { class: "message-content mix-message__inner" }, pe = ["src", "alt"], me = {
+}), [["__scopeId", "data-v-c26b7d0c"]]), pe = ["href", "download"], me = { class: "message-content mix-message__inner" }, he = ["src", "alt"], ge = {
 	key: 0,
 	class: "file-info-mask"
-}, he = {
+}, _e = {
 	key: 0,
 	class: "qq-text-ellipsis",
 	style: { display: "flex" }
-}, ge = { class: "qq-text-ellipsis" }, _e = { key: 1 }, W = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, ve = { class: "qq-text-ellipsis" }, ye = { key: 1 }, H = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QImage",
 	props: {
 		self: {
@@ -259,7 +259,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		}
 	},
 	setup(e) {
-		return (a, o) => (h(), t(L, {
+		return (a, o) => (h(), t(R, {
 			self: e.self,
 			name: e.name,
 			avatar: e.avatar,
@@ -272,7 +272,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 				class: "file-link",
 				href: e.src,
 				download: e.fileName
-			}, null, 8, de)) : n("", !0), i("div", fe, [i("div", {
+			}, null, 8, pe)) : n("", !0), i("div", me, [i("div", {
 				class: "image pic-element",
 				style: d({
 					"--max-image-width": e.maxWidth,
@@ -282,7 +282,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 				src: e.src,
 				alt: e.alt,
 				class: "image-content"
-			}, null, 8, pe)], 4), e.isFile ? (h(), r("div", me, [e.fileName ? (h(), r("p", he, [i("span", ge, S(e.fileName), 1)])) : n("", !0), e.fileSize ? (h(), r("p", _e, S(e.fileSize), 1)) : n("", !0)])) : n("", !0)])], 2)]),
+			}, null, 8, he)], 4), e.isFile ? (h(), r("div", ge, [e.fileName ? (h(), r("p", _e, [i("span", ve, S(e.fileName), 1)])) : n("", !0), e.fileSize ? (h(), r("p", ye, S(e.fileSize), 1)) : n("", !0)])) : n("", !0)])], 2)]),
 			_: 1
 		}, 8, [
 			"self",
@@ -293,10 +293,10 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"is-bot"
 		]));
 	}
-}), [["__scopeId", "data-v-0945e2df"]]), ve = { class: "file-message--content nocopy" }, ye = ["href", "download"], be = { class: "normal-file file-element" }, xe = { class: "file-header" }, Se = { class: "file-name" }, Ce = { class: "qq-text-ellipsis" }, we = {
+}), [["__scopeId", "data-v-0945e2df"]]), be = { class: "file-message--content nocopy" }, xe = ["href", "download"], Se = { class: "normal-file file-element" }, Ce = { class: "file-header" }, we = { class: "file-name" }, Te = { class: "qq-text-ellipsis" }, Ee = {
 	key: 0,
 	class: "file-info"
-}, G = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, U = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QFile",
 	props: {
 		self: {
@@ -321,7 +321,7 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 		}
 	},
 	setup(e) {
-		return (a, o) => (h(), t(L, {
+		return (a, o) => (h(), t(R, {
 			self: e.self,
 			name: e.name,
 			avatar: e.avatar,
@@ -329,16 +329,16 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"tag-color": e.tagColor,
 			"is-bot": e.isBot
 		}, {
-			default: E(() => [i("div", ve, [e.fileSrc && e.canDownload ? (h(), r("a", {
+			default: E(() => [i("div", be, [e.fileSrc && e.canDownload ? (h(), r("a", {
 				key: 0,
 				class: "file-link",
 				href: e.fileSrc,
 				download: e.fileName
-			}, null, 8, ye)) : n("", !0), i("div", be, [i("div", xe, [i("p", Se, [i("span", Ce, S(e.fileName), 1)]), e.iconSrc ? (h(), r("div", {
+			}, null, 8, xe)) : n("", !0), i("div", Se, [i("div", Ce, [i("p", we, [i("span", Te, S(e.fileName), 1)]), e.iconSrc ? (h(), r("div", {
 				key: 0,
 				class: "file-icon",
 				style: d({ backgroundImage: `url(${e.iconSrc})` })
-			}, null, 4)) : n("", !0)]), e.fileSize ? (h(), r("div", we, [i("span", null, S(e.fileSize), 1)])) : n("", !0)])])]),
+			}, null, 4)) : n("", !0)]), e.fileSize ? (h(), r("div", Ee, [i("span", null, S(e.fileSize), 1)])) : n("", !0)])])]),
 			_: 1
 		}, 8, [
 			"self",
@@ -349,30 +349,29 @@ var k = { class: "qq-header__title" }, A = /*@__PURE__*/ s({
 			"is-bot"
 		]));
 	}
-}), [["__scopeId", "data-v-8bf4d901"]]), Te = {
+}), [["__scopeId", "data-v-8bf4d901"]]), De = {
 	key: 0,
 	class: "message__timestamp no-copy"
-}, Ee = { class: "babble" }, De = {
+}, Oe = { class: "babble" }, ke = {
 	key: 1,
 	class: "gray-tip-message no-copy"
-}, Oe = { class: "gray-tip-content babble" }, K = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, Ae = { class: "gray-tip-content babble" }, W = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QTip",
 	props: { isTime: {
 		type: Boolean,
 		default: !1
 	} },
 	setup(e) {
-		return (t, n) => e.isTime ? (h(), r("div", Te, [i("span", Ee, [v(t.$slots, "default", {}, void 0, !0)])])) : (h(), r("div", De, [i("div", Oe, [v(t.$slots, "default", {}, void 0, !0)])]));
+		return (t, n) => e.isTime ? (h(), r("div", De, [i("span", Oe, [v(t.$slots, "default", {}, void 0, !0)])])) : (h(), r("div", ke, [i("div", Ae, [v(t.$slots, "default", {}, void 0, !0)])]));
 	}
 }), [["__scopeId", "data-v-e6e407a4"]]);
-//#endregion
-//#region node_modules/.pnpm/@vueuse+shared@15.0.0_vue@3.5.44_typescript@5.9.3_/node_modules/@vueuse/shared/dist/index.js
-function q(e, t) {
+// node_modules/.pnpm/@vueuse+shared@15.0.0_vue@3.5.45_typescript@5.9.3_/node_modules/@vueuse/shared/dist/index.js
+function G(e, t) {
 	return c() ? (m(e, t), !0) : !1;
 }
-var J = typeof window < "u" && typeof document < "u";
+var K = typeof window < "u" && typeof document < "u";
 typeof WorkerGlobalScope < "u" && globalThis instanceof WorkerGlobalScope;
-function Y(e, t = 1e3, n = {}) {
+function q(e, t = 1e3, n = {}) {
 	let { immediate: r = !0, immediateCallback: i = !1 } = n, a = null, o = x(!1);
 	function s() {
 		a &&= (clearInterval(a), null);
@@ -384,40 +383,39 @@ function Y(e, t = 1e3, n = {}) {
 		let n = C(t);
 		n <= 0 || (o.value = !0, i && e(), s(), o.value && (a = setInterval(e, n)));
 	}
-	return r && J && u(), (l(t) || typeof t == "function") && q(T(t, () => {
-		o.value && J && u();
-	})), q(c), {
+	return r && K && u(), (l(t) || typeof t == "function") && G(T(t, () => {
+		o.value && K && u();
+	})), G(c), {
 		isActive: b(o),
 		pause: c,
 		resume: u
 	};
 }
-//#endregion
-//#region src/package/components/base/QVoicePlayIcon.vue?vue&type=script&setup=true&lang.ts
-var ke = {
+// src/package/components/base/QVoicePlayIcon.vue?vue&type=script&setup=true&lang.ts
+var je = {
 	id: "play_fill_24",
 	viewBox: "0 0 24 24",
 	fill: "none",
 	xmlns: "http://www.w3.org/2000/svg"
-}, Ae = /* @__PURE__ */ s({
+}, Me = /* @__PURE__ */ s({
 	name: "QVoicePlayIcon",
 	__name: "QVoicePlayIcon",
 	setup(e) {
-		return (e, t) => (h(), r("svg", ke, [...t[0] ||= [i("path", {
+		return (e, t) => (h(), r("svg", je, [...t[0] ||= [i("path", {
 			d: "M6 20.2428V3.75722C6 2.56846 7.31683 1.85207 8.31488 2.49786L21.0537 10.7406C21.9672 11.3317 21.9672 12.6683 21.0537 13.2594L8.31488 21.5021C7.31683 22.1479 6 21.4315 6 20.2428Z",
 			fill: "currentColor"
 		}, null, -1)]]));
 	}
-}), je = {
+}), Ne = {
 	id: "pause_24",
 	viewBox: "0 0 24 24",
 	fill: "none",
 	xmlns: "http://www.w3.org/2000/svg"
-}, Me = /* @__PURE__ */ s({
+}, Pe = /* @__PURE__ */ s({
 	name: "QVoicePauseIcon",
 	__name: "QVoicePauseIcon",
 	setup(e) {
-		return (e, t) => (h(), r("svg", je, [...t[0] ||= [i("path", {
+		return (e, t) => (h(), r("svg", Ne, [...t[0] ||= [i("path", {
 			"fill-rule": "evenodd",
 			"clip-rule": "evenodd",
 			d: "M17 4C17.5523 4 18 4.44771 18 5L18 19C18 19.5523 17.5523 20 17 20L15 20C14.4477 20 14 19.5523 14 19L14 5C14 4.44771 14.4477 4 15 4L17 4Z",
@@ -429,13 +427,13 @@ var ke = {
 			fill: "currentColor"
 		}, null, -1)]]));
 	}
-}), Ne = { class: "ptt-message__inner" }, Pe = { class: "ptt-element__top-area" }, Fe = { class: "ptt-element__button" }, Ie = {
+}), Fe = { class: "ptt-message__inner" }, Ie = { class: "ptt-element__top-area" }, Le = { class: "ptt-element__button" }, Re = {
 	class: "q-svg-icon q-icon",
 	style: {
 		width: "10px",
 		height: "10px"
 	}
-}, Le = { class: "ptt-element__duration" }, X = { class: "ptt-element__bottom-area" }, Re = { class: "ptt-element__bottom-area-text" }, Z = /*#__PURE__*/ j(/* @__PURE__ */ s({
+}, ze = { class: "ptt-element__duration" }, J = { class: "ptt-element__bottom-area" }, Be = { class: "ptt-element__bottom-area-text" }, Y = /*#__PURE__*/ j(/* @__PURE__ */ s({
 	__name: "QVoiceBase",
 	props: {
 		self: {
@@ -458,7 +456,7 @@ var ke = {
 	},
 	setup(e) {
 		let n = g(!1);
-		return (r, o) => (h(), t(L, {
+		return (r, o) => (h(), t(R, {
 			self: e.self,
 			name: e.name,
 			avatar: e.avatar,
@@ -469,14 +467,14 @@ var ke = {
 			default: E(() => [i("div", {
 				class: u(["msg-content-container mix-message__container ptt-message nocopy", e.self ? "container--self" : "container--others"]),
 				onContextmenu: o[2] ||= O((e) => n.value = !n.value, ["prevent", "stop"])
-			}, [i("div", Ne, [i("div", {
+			}, [i("div", Fe, [i("div", {
 				class: "ptt-element",
 				onClick: o[0] ||= (...t) => e.play && e.play(...t)
-			}, [i("div", Pe, [
-				i("div", Fe, [i("i", Ie, [(h(), t(y(e.playPaused ? Ae : Me)))])]),
+			}, [i("div", Ie, [
+				i("div", Le, [i("i", Re, [(h(), t(y(e.playPaused ? Me : Pe)))])]),
 				v(r.$slots, "default", {}, void 0, !0),
-				i("div", Le, [i("span", null, S(e.formatedDuration), 1)])
-			])]), D(i("div", X, [i("div", Re, [a(S(e.text) + " ", 1), i("div", {
+				i("div", ze, [i("span", null, S(e.formatedDuration), 1)])
+			])]), D(i("div", J, [i("div", Be, [a(S(e.text) + " ", 1), i("div", {
 				class: "ptt-element__bottom-area-icon",
 				onClick: o[1] ||= (e) => n.value = !1
 			}, [...o[3] ||= [i("i", {
@@ -506,7 +504,7 @@ var ke = {
 			"is-bot"
 		]));
 	}
-}), [["__scopeId", "data-v-467a0efc"]]), Q = /* @__PURE__ */ s({
+}), [["__scopeId", "data-v-467a0efc"]]), X = /* @__PURE__ */ s({
 	__name: "QVoice",
 	props: {
 		self: {
@@ -528,40 +526,60 @@ var ke = {
 	setup(a) {
 		let o = a, s = g(), c = g(0), l = g(""), u = g([]), m = g(!0), v = g(!0), y, b, x, S;
 		function C(e) {
-			return e /= 1.2, e < 4 ? 4 : e > 30 ? 30 : e;
+			return Math.max(4, Math.min(30, Math.floor(e / 1.2)));
 		}
 		function w(e) {
 			return e >= 0 ? 1 : e <= -80 ? .2 : (e - -80) / 80 * .8 + .2;
 		}
 		function D(e) {
-			let t = Math.floor(e / 60), n = Math.round(e % 60);
-			return t > 0 ? `${t}'${n}"` : `${n}"`;
+			let t = Math.floor(e), n = Math.floor(t / 60), r = t % 60;
+			return n > 0 ? `${n}'${r}"` : `${r}"`;
 		}
-		async function O(e) {
-			y = new (window.AudioContext || window.webkitAudioContext)(), S = y.createGain(), S.connect(y.destination);
+		function O() {
+			x?.pause(), x = void 0, y && k && (k.onended = null, k.stop()), k = void 0, m.value = !0, v.value = !0, c.value = 0, s.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)"), s.value?.querySelectorAll(".ptt-element__progress-item").forEach((e) => e.style.removeProperty("--process-item-color"));
+		}
+		let k, A = 0;
+		async function j(e) {
+			let t = ++A, n = y;
+			y = void 0, S = void 0, b = void 0;
 			try {
-				let t = await (await fetch(e)).arrayBuffer();
-				b = await y.decodeAudioData(t);
-				let n = b.getChannelData(0), r = C(b.duration), i = Math.floor(n.length / r), a = Array.from({ length: r }, (e, t) => {
-					let r = n.slice(t * i, (t + 1) * i), a = Math.sqrt(r.reduce((e, t) => e + t ** 2, 0) / r.length);
+				n && await n.close();
+				let r = window.AudioContext ?? window.webkitAudioContext;
+				if (!r) throw Error("AudioContext is not supported by this browser");
+				let i = new r(), a = i.createGain();
+				if (a.gain.value = Math.max(0, Math.min(1, o.volume)), a.connect(i.destination), t !== A) {
+					await i.close();
+					return;
+				}
+				y = i, S = a;
+				let s = await fetch(e);
+				if (!s.ok) throw Error(`Failed to load audio (${s.status} ${s.statusText})`);
+				let c = await s.arrayBuffer(), d = await i.decodeAudioData(c);
+				if (t !== A) return;
+				b = d;
+				let f = b.getChannelData(0), p = C(b.duration), m = Array.from({ length: p }, (e, t) => {
+					let n = Math.floor(t * f.length / p), r = Math.floor((t + 1) * f.length / p), i = f.subarray(n, r);
+					if (i.length === 0) return 0;
+					let a = Math.sqrt(i.reduce((e, t) => e + t ** 2, 0) / i.length);
 					return 20 * Math.log10(Math.max(a, 1e-10));
 				});
-				l.value = D(b.duration), u.value = a.map(w);
+				l.value = D(b.duration), u.value = m.map(w);
 			} catch (e) {
-				console.error("Error loading audio file:", e), l.value = "Error", u.value = Array(10).fill(.05);
+				if (t !== A) return;
+				console.error("Error loading audio file:", e), b = void 0, l.value = "Error", u.value = [];
 			}
 		}
-		function k() {
+		function M() {
 			if (y !== void 0 && b !== void 0 && s.value !== void 0 && S !== void 0) {
 				if (m.value) {
 					let e = y.createBufferSource();
 					e.buffer = b, e.connect(S), e.onended = () => {
-						m.value = !0, v.value = !0;
-					}, e.start(), m.value = !1, v.value = !1, s.value.style.setProperty("--process-item-color", "var(--qq-text-secondary-01)"), x = new A([...s.value.children], b.duration), x.start();
+						k === e && (k = void 0, m.value = !0, v.value = !0, x?.pause(), x = void 0, c.value = 0, s.value?.querySelectorAll(".ptt-element__progress-item").forEach((e) => e.style.removeProperty("--process-item-color")), s.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)"));
+					}, k = e, y.resume(), e.start(), m.value = !1, v.value = !1, s.value.style.setProperty("--process-item-color", "var(--qq-text-secondary-01)"), x = new N([...s.value.children], b.duration), x.start();
 				} else y.state === "running" ? (y.suspend(), x?.pause(), v.value = !0) : y.state === "suspended" && (y.resume(), x?.resume(), v.value = !1);
 			}
 		}
-		class A {
+		class N {
 			progressItems;
 			duration;
 			pauseFn = void 0;
@@ -570,11 +588,11 @@ var ke = {
 				this.progressItems = e, this.duration = t;
 			}
 			start() {
-				let e = 0, { pause: t, resume: n } = Y(() => {
-					m.value && (t(), e = 0, this.progressItems.forEach((e) => e.style.removeProperty("--process-item-color")), s.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)")), this.progressItems[e].style.setProperty("--process-item-color", "var(--qq-text_primary)"), e++;
-				}, Math.floor(this.duration) / this.progressItems.length * 1e3, { immediate: !0 }), { pause: r, resume: i } = Y(() => {
-					m.value && (r(), c.value = 0), c.value++;
-				}, Math.floor(this.duration) / 100 * 1e3, { immediate: !0 });
+				let e = 0, { pause: t, resume: n } = q(() => {
+					m.value ? (t(), e = 0, this.progressItems.forEach((e) => e.style.removeProperty("--process-item-color")), s.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)")) : (this.progressItems[e]?.style.setProperty("--process-item-color", "var(--qq-text_primary)"), e = Math.min(e + 1, this.progressItems.length - 1));
+				}, Math.max(16, this.duration / this.progressItems.length * 1e3), { immediate: !0 }), { pause: r, resume: i } = q(() => {
+					m.value ? (r(), c.value = 0) : c.value = Math.min(c.value + 1, 100);
+				}, Math.max(16, this.duration / 100 * 1e3), { immediate: !0 });
 				this.pauseFn = () => {
 					t(), r();
 				}, this.resumeFn = () => {
@@ -589,12 +607,14 @@ var ke = {
 			}
 		}
 		return p(async () => {
-			await O(o.src);
+			await j(o.src);
 		}), f(() => {
-			y !== void 0 && y.close();
+			A++, O(), y !== void 0 && y.close();
+		}), T(() => o.src, (e) => {
+			O(), l.value = "", u.value = [], j(e);
 		}), T(() => o.volume, (e) => {
-			S !== void 0 && (S.gain.value = e);
-		}), (o, f) => (h(), t(Z, {
+			S !== void 0 && (S.gain.value = Math.max(0, Math.min(1, e)));
+		}), (o, f) => (h(), t(Y, {
 			self: a.self,
 			name: a.name,
 			avatar: a.avatar,
@@ -602,7 +622,7 @@ var ke = {
 			"tag-color": a.tagColor,
 			"is-bot": a.isBot,
 			src: a.src,
-			play: k,
+			play: M,
 			"play-paused": v.value,
 			"formated-duration": l.value,
 			text: a.text
@@ -635,7 +655,7 @@ var ke = {
 			"text"
 		]));
 	}
-}), ze = ["src"], Be = /* @__PURE__ */ s({
+}), Ve = ["src"], Z = /* @__PURE__ */ s({
 	__name: "QVoiceLegacy",
 	props: {
 		self: {
@@ -657,22 +677,28 @@ var ke = {
 	setup(a) {
 		let o = a, s = g(), c = g(), l = g(0), u = g(0), f = g(""), p = g([]), m = g(!0), v = g(!0), y;
 		function b(e) {
-			return e /= 1.2, Array.from({ length: e >= 25 ? 25 : e < 5 ? 5 : e }, () => x(30, 60));
+			let t = Math.max(5, Math.min(25, Math.floor(e / 1.2)));
+			return Array.from({ length: t }, () => x(30, 60));
 		}
 		function x(e, t) {
 			return Math.floor(Math.random() * (t - e + 1)) + e;
 		}
 		function S(e) {
-			let t = Math.floor(e / 60), n = Math.round(e % 60);
-			return t > 0 ? `${t}'${n}"` : `${n}"`;
+			let t = Math.floor(e), n = Math.floor(t / 60), r = t % 60;
+			return n > 0 ? `${n}'${r}"` : `${r}"`;
 		}
 		async function C() {
-			s.value && (u.value = Math.round(s.value.duration), f.value = S(u.value), p.value = b(u.value));
+			s.value && (s.value.volume = Math.max(0, Math.min(1, o.volume)), u.value = Number.isFinite(s.value.duration) ? s.value.duration : 0, f.value = S(u.value), p.value = b(u.value));
 		}
 		function w() {
-			s.value && c.value && (v.value = !v.value, m.value ? (s.value.play(), m.value = !1, v.value = !1, c.value.style.setProperty("--process-item-color", "var(--qq-text-secondary-01)"), y = new D([...c.value.children]), y.start()) : s.value.paused ? (s.value.play(), y?.resume(), v.value = !1) : (s.value.pause(), y?.pause(), v.value = !0));
+			s.value?.play().catch((e) => {
+				console.error("Error playing audio file:", e), k();
+			});
 		}
-		class D {
+		function D() {
+			s.value && c.value && (v.value = !v.value, m.value ? (m.value = !1, v.value = !1, c.value.style.setProperty("--process-item-color", "var(--qq-text-secondary-01)"), y = new O([...c.value.children]), y.start(), w()) : s.value.paused ? (y?.resume(), v.value = !1, w()) : (s.value.pause(), y?.pause(), v.value = !0));
+		}
+		class O {
 			progressItems;
 			pauseFn = void 0;
 			resumeFn = void 0;
@@ -680,11 +706,11 @@ var ke = {
 				this.progressItems = e;
 			}
 			start() {
-				let e = 0, { pause: t, resume: n } = Y(() => {
-					m.value && (t(), e = 0, this.progressItems.forEach((e) => e.style.removeProperty("--process-item-color")), c.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)")), this.progressItems[e]?.style.setProperty("--process-item-color", "var(--qq-text_primary)"), e++;
-				}, Math.floor(u.value) / this.progressItems.length * 1e3, { immediate: !0 }), { pause: r, resume: i } = Y(() => {
-					m.value && (r(), l.value = 0), l.value++;
-				}, Math.floor(u.value) / 100 * 1e3, { immediate: !0 });
+				let e = 0, { pause: t, resume: n } = q(() => {
+					m.value ? (t(), e = 0, this.progressItems.forEach((e) => e.style.removeProperty("--process-item-color")), c.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)")) : (this.progressItems[e]?.style.setProperty("--process-item-color", "var(--qq-text_primary)"), e = Math.min(e + 1, this.progressItems.length - 1));
+				}, Math.max(16, u.value / this.progressItems.length * 1e3), { immediate: !0 }), { pause: r, resume: i } = q(() => {
+					m.value ? (r(), l.value = 0) : l.value = Math.min(l.value + 1, 100);
+				}, Math.max(16, u.value / 100 * 1e3), { immediate: !0 });
 				this.pauseFn = () => {
 					t(), r();
 				}, this.resumeFn = () => {
@@ -698,12 +724,14 @@ var ke = {
 				this.resumeFn && this.resumeFn();
 			}
 		}
-		function O() {
-			m.value = !0, v.value = !0;
+		function k() {
+			m.value = !0, v.value = !0, l.value = 0, y?.pause(), y = void 0, c.value?.querySelectorAll(".ptt-element__progress-item").forEach((e) => e.style.removeProperty("--process-item-color")), c.value?.style.setProperty("--process-item-color", "var(--qq-text_primary)");
 		}
 		return T(() => o.volume, (e) => {
-			s.value !== void 0 && (s.value.volume = e);
-		}), (o, u) => (h(), t(Z, {
+			s.value !== void 0 && (s.value.volume = Math.max(0, Math.min(1, e)));
+		}, { immediate: !0 }), T(() => o.src, () => {
+			s.value?.pause(), k(), f.value = "", p.value = [];
+		}), (o, u) => (h(), t(Y, {
 			self: a.self,
 			name: a.name,
 			avatar: a.avatar,
@@ -711,7 +739,7 @@ var ke = {
 			"tag-color": a.tagColor,
 			"is-bot": a.isBot,
 			src: a.src,
-			play: w,
+			play: D,
 			"play-paused": v.value,
 			"formated-duration": f.value,
 			text: a.text
@@ -720,9 +748,9 @@ var ke = {
 				ref_key: "audio",
 				ref: s,
 				src: a.src,
-				onEnded: O,
+				onEnded: k,
 				onLoadedmetadata: C
-			}, null, 40, ze), i("div", {
+			}, null, 40, Ve), i("div", {
 				ref_key: "progressItemsRef",
 				ref: c,
 				class: "ptt-element__progress",
@@ -750,67 +778,66 @@ var ke = {
 			"text"
 		]));
 	}
-}), Ve = { class: "forward-msg nocopy" }, He = { class: "fwd-title text-ellipsis" }, Ue = { class: "count" }, We = [
+}), He = { class: "forward-msg nocopy" }, Ue = { class: "fwd-title text-ellipsis" }, We = { class: "count" }, Q = /*#__PURE__*/ j(/* @__PURE__ */ s({
+	__name: "QForward",
+	props: {
+		self: {
+			type: Boolean,
+			default: !1
+		},
+		name: {},
+		avatar: { default: void 0 },
+		tag: { default: void 0 },
+		tagColor: { default: void 0 },
+		isBot: {
+			type: Boolean,
+			default: !1
+		},
+		title: { default: "群聊的聊天记录" },
+		contents: {}
+	},
+	setup(n) {
+		return (a, o) => (h(), t(R, {
+			self: n.self,
+			name: n.name,
+			avatar: n.avatar,
+			tag: n.tag,
+			"tag-color": n.tagColor,
+			"is-bot": n.isBot
+		}, {
+			default: E(() => [i("div", He, [
+				i("div", Ue, S(n.title), 1),
+				(h(!0), r(e, null, _(n.contents, (e, t) => (h(), r("div", {
+					key: t,
+					class: "fwd-content text-ellipsis"
+				}, S(e), 1))), 128)),
+				i("div", We, "查看" + S(n.contents.length) + "条转发消息", 1)
+			])]),
+			_: 1
+		}, 8, [
+			"self",
+			"name",
+			"avatar",
+			"tag",
+			"tag-color",
+			"is-bot"
+		]));
+	}
+}), [["__scopeId", "data-v-c80d8ef0"]]), Ge = [
+	B,
+	V,
 	H,
 	U,
 	W,
-	G,
-	K,
+	X,
+	Z,
 	Q,
-	Be,
-	/* @__PURE__ */ j(/* @__PURE__ */ s({
-		__name: "QForward",
-		props: {
-			self: {
-				type: Boolean,
-				default: !1
-			},
-			name: {},
-			avatar: { default: void 0 },
-			tag: { default: void 0 },
-			tagColor: { default: void 0 },
-			isBot: {
-				type: Boolean,
-				default: !1
-			},
-			title: { default: "群聊的聊天记录" },
-			contents: {}
-		},
-		setup(n) {
-			return (a, o) => (h(), t(L, {
-				self: n.self,
-				name: n.name,
-				avatar: n.avatar,
-				tag: n.tag,
-				"tag-color": n.tagColor,
-				"is-bot": n.isBot
-			}, {
-				default: E(() => [i("div", Ve, [
-					i("div", He, S(n.title), 1),
-					(h(!0), r(e, null, _(n.contents, (e, t) => (h(), r("div", {
-						key: t,
-						class: "fwd-content text-ellipsis"
-					}, S(e), 1))), 128)),
-					i("div", Ue, "查看" + S(n.contents.length) + "条转发消息", 1)
-				])]),
-				_: 1
-			}, 8, [
-				"self",
-				"name",
-				"avatar",
-				"tag",
-				"tag-color",
-				"is-bot"
-			]));
-		}
-	}), [["__scopeId", "data-v-0352b5ff"]]),
-	L
-], Ge = [M, N], $ = (e, t) => {
+	R
+], Ke = [M, P], $ = (e, t) => {
 	t.__name ? e.component(t.__name, t) : t.name ? e.component(t.name, t) : t.__name === void 0 && t.name === void 0 && console.error("[Fake QQ UI] The follow component has no name.", t);
-}, Ke = { install(e) {
-	We.forEach((t) => $(e, t)), Ge.forEach((t) => $(e, t));
+}, qe = { install(e) {
+	Ge.forEach((t) => $(e, t)), Ke.forEach((t) => $(e, t));
 } };
-//#endregion
-export { Ke as FakeQQUI, G as QFile, M as QHeader, W as QImage, N as QMain, H as QReply, P as QTagColors, U as QText, K as QTip, Q as QVoice };
+export { qe as FakeQQUI, U as QFile, Q as QForward, M as QHeader, H as QImage, P as QMain, B as QReply, F as QTagColors, V as QText, W as QTip, X as QVoice, Z as QVoiceLegacy };
 
 //# sourceMappingURL=fake-qq-ui.js.map

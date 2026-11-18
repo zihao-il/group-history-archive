@@ -17,7 +17,7 @@ import RubyCurtain from "./components/RubyCurtain.vue"
 import QWindow from './components/QWindow.vue'
 import VolumeBar from './components/VolumeBar.vue'
 import YearNav from './components/YearNav.vue'
-import 'fake-qq-ui/styles/fake-qq-ui.css'
+import 'fake-qq-ui/styles/style.css'
 import 'fake-qq-ui/styles/light.scss'
 import 'fake-qq-ui/styles/dark.scss'
 
